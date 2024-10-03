@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Vs Absolute Path</title>
+</head>
+<body>
+    <!--* Relative Path : A relative path points to the location of a file relative to the current document. It is typically used when the file is stored in the same directory or a nearby directory. -->
+
+    <!--* Example of Relative Path : 
+        👉 "images/pic.jpg" : Points to the pic.jpg file inside the images folder in the same directory.
+        👉 "../images/pic.jpg" : Moves up one level and into the images folder to access pic.jpg.
+        👉 "assets/images/pic.jpg" : Navigates into the assets folder, then the images folder to access pic.jpg.
+    -->
+
+
+    <!--* Absolute Path : An absolute path points to the full URL to the image, starting from the root folder or the domain of the website. -->
+
+    <!--* Absolute Path Example:
+        👉 "https://www.example.com/images/pic.jpg" : Full URL pointing to pic.jpg hosted on www.example.com. 
+    -->
+
+    <h1>Relative Vs Absolute Path</h1>
+
+    <h2>Embed image using Relative path</h2>
+    <img 
+        src="./images/programmer.jpg" 
+        alt="Programmer-Image-From-Local" 
+        height="300" 
+        title="Programmer From Local"
+    >
+    <p>
+        The image in this example is embedded by using a relative path from the local device. This means that instead of providing the full directory path or an external URL, the image is referenced in relation to the location of the current HTML file. This approach is commonly used in web development when all the necessary files are located within the same project directory.
+    </p>
+
+
+    <h2>Embed image using Absolute path</h2>
+    <img 
+        src="https://img.freepik.com/free-vector/young-programmer-working-laptop-computer-cartoon-character_24797-2123.jpg?ga=GA1.1.1658636945.1727930825&semt=ais_hybrid" 
+        alt="Programmer-Image-From-Global" 
+        height="300" 
+        title="Programmer From URL"
+    >
+    <p>
+        In this example, the image is embedded by using an absolute path, where the source of the image is specified as a complete URL. This means that instead of referencing a file from the local device or project directory, the image is being fetched directly from a specific location on the web. This method is particularly useful when you need to include resources that are hosted on external websites, ensuring that the image can be accessed consistently across different devices and environments
+    </p>
+</body>
+</html>
