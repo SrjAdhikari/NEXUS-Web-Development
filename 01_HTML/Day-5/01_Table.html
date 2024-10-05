@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+</head>
+<body>
+    <!--* The HTML <table> tag is used to create tables in web pages. -->
+
+
+    <!--* HTML table elements:
+        👉 <table>: The container for the table.
+        👉 <tr>: Table row, used to create rows in the table.
+        👉 <th>: Table header, used for the header cells (typically bold and centered).
+        👉 <td>: Table data, used for data cells in the table (the actual data).
+    -->
+
+
+    <!--* Table Sections (<thead>, <tbody>, <tfoot>):
+        👉 <thead>: Table header (usually the first row).
+        👉 <tbody>: The body of the table (main data).
+        👉 <tfoot>: Table footer (used for totals or summaries).
+    -->
+
+
+    <!--* Table Borders (border): 
+        <!--* By default, tables do not have borders. To add borders, you can use the border attribute or CSS. 
+        <!--* The border attribute defines the thickness of the border around the cells.
+
+        Syntax: <table border="number-of-borders">
+        <table border="1"> : Creates a border around each cell.
+    -->
+
+
+    <!--* Table with Cell Padding and Spacing:
+        👉 cellpadding: Adds space inside the cells, between the cell content and its borders.
+            Syntax: <td cellpadding="number-of-spaces">
+        
+        👉 cellspacing: Adds space between the cells.
+            Syntax: <td cellspacing="number-of-spaces">
+    -->
+
+
+    <!--* Spanning Columns (colspan) and Rows (rowspan):
+        👉 <colspan>: Used to merges multiple columns into one cell.
+            Syntax: <td colspan="number-of-columns">
+        
+        👉 <rowspan>: Used to merges multiple rows into one cell.
+            Syntax: <td rowspan="number-of-rows">
+    -->
+
+
+    <h1>HTML Table Tag</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Suraj</td>
+                <td>27</td>
+                <td>Male</td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td>Riya</td>
+                <td>25</td>
+                <td>Female</td>
+                <td>150000</td>
+            </tr>
+            <tr>
+                <td>Rohit</td>
+                <td>27</td>
+                <td>Male</td>
+                <td>120000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
