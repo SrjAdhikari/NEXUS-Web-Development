@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+</head>
+<body>
+    <h1>Table Column Span</h1>
+    
+    <table border=""1>
+        <caption>Monthly Sales</caption>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th colspan="2">Sales</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>T-Shirts</td>
+                <td>$50</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>Pants</td>
+                <td colspan="2">$1200</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>Shoes</td>
+                <td>$100</td>
+                <td colspan="2">$2000</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total Sales</td>
+                <td colspan="2">$4200</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
