@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form>
+        <!-- Username -->
+        <label for="username"> Useranme :</label>
+        <input 
+            type="text" 
+            name="username" 
+            id="username" 
+            required 
+            placeholder="Enter your username"
+        >
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email :</label>
+        <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            required
+            placeholder="example@gmail.com"
+        >
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password :</label>
+        <input 
+            type="password" 
+            name="password" 
+            id="password" 
+            required 
+            placeholder="Enter your password"
+        >
+        <br><br>
+
+        <!-- Gender -->
+        <label> Gender :</label>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male"> Male</label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female"> Female</label>
+
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other"> Other</label>
+        <br><br>
+
+        <!-- Terms and Conditions -->
+        <input type="checkbox" name="conditions" id="conditions">
+        <label for="conditions">I agree with the terms and conditions</label>
+        <br><br>
+
+        <!-- Button -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
