@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Tag</title>
+</head>
+<body>
+    <!--* The <form> tag is used to create an HTML form for user input. -->
+    <!--* The <input> HTML element is used to create interactive controls for web-based forms to accept data from the user. We must write inside the form tag. -->
+
+    <!--* HTML Types of inputs in HTML Form
+        👉 Text Input (<input type="text" />) : 
+            Allows users to enter a single line of text.
+        
+        👉 Password Input (<input type="password" />) : 
+            Hides the entered text for secure password entry.
+
+        👉 Email Input (<input type="email" />) : 
+            Validates and formats input as an email address.
+
+        👉 Number Input (<input type="number" />) : 
+            Accepts numeric input and provides increment/decrement controls.
+
+        👉 Radio Buttons (<input type="radio" />) : 
+            Allows users to choose a single option from a group of options.
+
+        👉 Checkboxes (<input type="checkbox" />) : 
+            Allows users to select multiple options.
+
+        👉 Dropdowns (<select> and <option>) : 
+            Provides a list of options for users to choose from.
+
+        👉 <datalist>: 
+            Provide a predefined list of options for autocomplete suggestions.
+
+        👉 Textarea (<textarea>) : 
+            Allows users to enter multiple lines of text.
+
+        👉 File Upload (<input type="file">) : 
+            Lets users choose and upload files from their device.
+
+        👉 Submit Button (<input type="submit">) : 
+            Submits the form data to the server. 
+    -->
+    
+    <h1>HTML Form</h1>
+
+    <form>
+        <!-- First Name -->
+        <label for="firstname">First Name :</label>
+        <input 
+            type="text" 
+            name="firstname" 
+            id="firstname"
+            placeholder="Enter Your First Name"
+            required
+        >
+        <br><br>
+
+        <!-- Last Name -->
+        <label for="lastname">Last Name :</label>
+        <input 
+            type="text" 
+            name="lastname" 
+            id="lastname"
+            placeholder="Enter Your Last Name"
+            required
+        >
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email :</label>
+        <input 
+            type="email" 
+            name="email" 
+            id="email"
+            placeholder="Enter Your Email"
+            required
+        >
+        <br><br>
+
+        <!-- Age -->
+        <label for="age">Age :</label>
+        <input 
+            type="number" 
+            name="age" 
+            id="age"
+            required
+        >
+        <br><br>
+
+        <!-- Button -->
+        <input type="submit" value="Submit">
+
+        <!-- OR 
+            <button type="submit">Submit</button>
+        -->
+    </form>
+</body>
+</html>
