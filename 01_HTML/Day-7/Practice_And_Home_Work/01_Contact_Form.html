@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+
+    <form>
+        <!-- Full Name -->
+        <label for="fullname">Full Name :</label>
+        <input 
+            type="text" 
+            name="fullname" 
+            id="fullname" 
+            required
+            placeholder="Enter your name"
+        >
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email :</label>
+        <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            required
+            placeholder="example@gmail.com"
+        >
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password :</label>
+        <input 
+            type="password" 
+            name="password" 
+            id="password" 
+            required 
+            placeholder="Enter your password"
+        >
+        <br><br>
+
+        <!-- Contact No. -->
+        <label for="phone">Contact No. :</label>
+        <input 
+            type="tel" 
+            name="phone" 
+            id="phone" 
+            required
+        >
+        <br><br>
+
+        <!-- Message -->
+        <label for="message">Message :</label>
+        <textarea 
+            name="message" 
+            id="message" 
+            rows="5" 
+            cols="50"
+            required
+            placeholder="Enter your message here...">
+        </textarea>
+        <br><br>
+
+        <!-- Button -->
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
