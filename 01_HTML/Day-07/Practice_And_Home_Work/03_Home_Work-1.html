@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+
+    <form>
+        <!-- Name -->
+        <label for="name"> Your Name :</label>
+        <input 
+            type="text" 
+            name="name" 
+            id="name" 
+            required
+        >
+        <br><br>
+
+        <!-- Email -->
+        <label for="email"> Your Email :</label>
+        <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            required
+        >
+        <br><br>
+
+        <!-- Rating -->
+        <label> Rate Us :</label>
+        <br>
+
+        <input type="radio" name="rate" id="one-star" value="1">
+        <label for="one-star">⭐</label>
+
+        <input type="radio" name="rate" id="two-star" value="2">
+        <label for="two-star">⭐⭐</label>
+
+        <input type="radio" name="rate" id="three-star" value="3">
+        <label for="three-star">⭐⭐⭐</label>
+
+        <input type="radio" name="rate" id="four-star" value="4">
+        <label for="four-star">⭐⭐⭐⭐</label>
+
+        <input type="radio" name="rate" id="five-star" value="5">
+        <label for="five-star">⭐⭐⭐⭐⭐</label>
+        <br><br>
+
+        <!-- Comment -->
+        <label for="comment">Comment :</label>
+        <textarea 
+            name="comment" 
+            id="comment"
+            rows="5"
+            cols="50">
+        </textarea>
+        <br><br>
+
+        <!-- Button -->
+        <button type="submit">Submit Feedback</button>
+    </form>
+</body>
+</html>
