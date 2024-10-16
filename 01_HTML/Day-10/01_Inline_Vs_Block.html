@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Vs Block Element</title>
+</head>
+<body>
+    <!--* Block Element : A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element. They always takes up the full width available (stretches out to the left and right as far as it can). -->
+
+    <!--* Block-level elements in HTML
+        👉 <div>, <p>, <h1>~<h6>, <ul>, <ol>, <li>
+        👉 <header>, <nav>, <main>, <section>, <footer>
+        👉 <article>, <aside>, <address>, <fieldset>, <form>
+        👉 <pre>, <table> <tfoot>, <hr>, <video>
+    -->
+
+
+    <!--* Inline Element : An inline element does not start on a new line. They only take up as much width as their content needs. -->
+
+    <!--* Inline elements in HTML
+        👉 <a>, <span>, <strong>, <em>, <img>
+        👉 <input>, <br>, <i>, <sub>, <sup>
+        👉 <code>, <button>, <b>, <label>, <select>
+        👉 <textarea>, <small>
+    -->
+
+
+    <!--* The <div> element is a block-level and is often used as a container for other HTML elements -->
+    <!--* The <span> element is an inline container used to mark up a part of a text, or a part of a document -->
+    <!--* Note: An inline element cannot contain a block-level element! -->
+
+
+    <h1>Inline Vs Block Element</h1>
+
+    <h2>Block Level Elements</h2>
+    <p>This is a paragraph and it's a block level element. It takes up the available full width.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <table border="1">
+        <caption>Table tag is also a block level element</caption>
+        <thead>
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Age</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Suraj</td>
+                <td>Adhikari</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Srj</td>
+                <td>Adhikari</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+
+    <h2>Inline Elements</h2>
+    <a 
+        href="https://google.com" 
+        target="_blank"> Goole
+    </a>
+    <br><br>
+
+    <label for="user-name">Name :</label>
+    <input 
+        type="text" 
+        name="username" 
+        id="user-name" 
+        required
+    >
+    <br><br>
+
+    H<sub>2</sub>O
+    <br>
+
+    e = mc<sup>2</sup>
+</body>
+</html>
