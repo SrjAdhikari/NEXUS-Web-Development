@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Audio Tag</title>
+</head>
+<body>
+    <!--* The <audio> tag is used to embed sound files into a webpage. It supports different formats like MP3, Ogg, and WAV. -->
+    <!--* HTML AUDIO TAG Attributes
+        👉 src : Specifies the path to the audio file.
+        👉 controls : Displays the audio controls (play, pause, volume).
+        👉 autoplay : Starts playing the audio when the page loads.
+        👉 loop : Replays the audio once it finishes.
+        👉 muted : Starts the audio in muted mode.
+    -->
+
+
+    <!--* Commonly Used Audio Formats
+        👉 MP3 : Most widely supported format.
+        👉 Ogg : An open format, less common.
+        👉 WAV : Uncompressed audio, supported by some browsers but larger in file size.
+    -->
+
+
+    <h1>HTML Audio</h1>
+
+    <!--* Method 1 : To embed audio / sound file -->
+    <h2>Method 1</h2>
+    <audio src="./audio/check.mp3" controls>
+        Your browser does not support the audio element.    <!-- Fallback message -->
+    </audio>
+    <br><hr>
+
+    <audio src="./audio/Jaadugar.mp3" controls>
+        Your browser does not support the audio element.    <!-- Fallback message -->
+    </audio>
+    <br><hr>
+
+    <audio src="./audio/sample.mp3" controls>
+        Your browser does not support the audio element.    <!-- Fallback message -->
+    </audio>
+    <br><hr>
+
+
+    <!--* Method 2 : To embed audio / sound file -->
+    <h2>Method 2</h2>
+    <audio controls>
+        <source src="./audio/check.mp3" type="audio/mpeg">
+        <source src="./audio/check.wav" type="audio/wav">
+        <source src="./audio/Jaadugar.mp3" type="audio/mpeg">
+
+        <!--* Fallback message for browsers, if the browser doesn't support the <audio> element. -->
+        Your browser does not support the audio tag.
+    </audio>
+    <hr>
+</body>
+</html>
