@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Video Tag</title>
+</head>
+<body>
+    <!--* The <video> tag is used to embed video content in a webpage. It supports different formats (like MP4, WebM, Ogg) and provides controls to play, pause, adjust volume, etc. -->
+    <!--* HTML VIDEO TAG Attributes
+        👉 src : Specifies the path to the video file.
+        👉 controls : Adds video controls like play, pause, volume, etc.
+        👉 autoplay : Makes the video play automatically when the page loads.
+        👉 loop : Loops the video, making it play again after it finishes.
+        👉 muted : Starts the video muted.
+        👉 poster : Specifies an image to show before the video starts playing (like a thumbnail).
+    -->
+    
+
+    <!--* Commonly Used Video Formats
+        👉 MP4 : Widely supported across most browsers.
+        👉 WebM : Optimized for modern browsers.
+        👉 Ogg : An open format, less common but supported in some browsers.
+    -->
+
+
+    <h1>HTML Video</h1>
+
+    <!--* Method 1 : To embed video file -->
+    <h2>Method 1</h2>
+    <video src="./video/park-road.mp4" controls height="350">
+        Your browser does not support the video element.    <!-- Fallback message -->
+    </video>
+    <br>
+
+    <video src="./video/watering.mp4" controls height="350">
+        Your browser does not support the video element.    <!-- Fallback message -->
+    </video>
+    <br>
+
+
+    <!--* Method 2 : To embed video file -->
+    <h2>Method 2</h2>
+    <video controls autoplay muted height="350">
+        <source src="./video/road-traffic.mp4" type="video/mp4">
+        <source src="./video/watering.mp4" type="vieo/mp4">
+
+        <!--* Fallback message for browsers, if the browser doesn't support the <video> element. -->
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- When using the autoplay attribute with the <video> element, some browsers might require the video to be muted in order for the video to start playing automatically. This is due to browser policies regarding autoplaying media with sound, which can be intrusive to users. -->
+</body>
+</html>
