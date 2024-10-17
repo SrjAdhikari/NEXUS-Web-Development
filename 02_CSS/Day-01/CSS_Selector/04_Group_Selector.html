@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Selector</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        h1 {
+            color: tomato;
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        
+        /* Select element by group */
+        p, ul, #paragraph {
+            color: crimson; 
+            background-color: rgb(208, 199, 243); 
+            font-size: 20px;
+            padding: 10px;
+            list-style: none;
+        }
+
+        button, #youtube {
+            font-size: 18px;
+            text-decoration: none;
+            background-color: red;
+            padding: 8px;
+            border-radius: 5px;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!--* Group Selector : Allows you to target multiple selectors at once and apply the same style to all of them. -->
+    <!-- Syntax : 
+        selector1, selector2  {
+            property: value;
+        }
+    -->
+
+
+    <h1>Group Selector</h1>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex explicabo dolores minus placeat repellendus, labore quidem quae nostrum sapiente corporis.
+    </p>
+
+    <p id="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatibus nemo ut, quod dolor exercitationem consectetur ex assumenda facere ipsam, iusto quisquam nulla veritatis atque.
+    </p>
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grape</li>
+        <li>Mango</li>
+        <li>Orange</li>
+    </ul>
+
+    <button> Click Me </button>
+
+    <a 
+        href="https://youtube.com"
+        target="_blank"
+        title="YouTube"
+        id="youtube"
+        class="youtube-link"> YouTube
+    </a>
+</body>
+</html>
