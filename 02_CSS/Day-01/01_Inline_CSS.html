@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS</title>
+</head>
+<body>
+    <!--* Inline CSS : Apply styles directly to an individual HTML element using the style attribute inside the element's opening tag. -->
+    <!-- Syntax : <element style="property: value;"> </element> -->
+    
+
+    <!--* Note : Use inline CSS sparingly, mainly when there's a very specific reason to style one element only. -->
+
+
+    <!--* Pro Tip : Order of Priority (if all three are used together)
+        👉 Inline CSS overrides internal and external styles
+        👉 Internal CSS overrides external styles.
+        👉 External CSS has the lowest priority but is the most organized.
+    -->
+
+
+    <h1 
+        style="color: tomato;
+        text-align: center;
+        font-size: 40px;
+        text-decoration: underline;"> Inline CSS
+    </h1>
+
+    <p 
+        style="color: crimson; 
+        background-color: seashell; 
+        font-size: 20px;"
+    >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex explicabo dolores minus placeat repellendus, labore quidem quae nostrum sapiente corporis.
+    </p>
+
+    <ul
+        style="list-style: none;
+        color: royalblue;
+        background-color: antiquewhite;
+        font-size: 20px;
+        padding: 10px;"
+    >
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grape</li>
+        <li>Mango</li>
+        <li>Orange</li>
+    </ul>
+
+    <button 
+        style="background-color: #000;
+        color: #fff;
+        border: none; 
+        padding: 8px; 
+        border-radius: 5px; 
+        font-size: 17px;"> Click Me
+    </button>
+
+    <a 
+        href="https://youtube.com"
+        target="_blank"
+        title="YouTube"
+        id="youtube"
+        class="youtube-link"
+
+        style="font-size: 18px;
+        text-decoration: none;
+        background-color: red;
+        padding: 8px;
+        border-radius: 5px;
+        color: #fff;"> YouTube
+    </a>
+</body>
+</html>
