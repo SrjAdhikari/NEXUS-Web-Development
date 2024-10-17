@@ -1,0 +1,43 @@
+body {
+    background-color: snow;
+}
+
+h1 {
+    color: tomato;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+p {
+    color: crimson; 
+    background-color: antiquewhite; 
+    font-size: 20px;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    color: royalblue;
+    background-color: antiquewhite;
+    font-size: 20px;
+    padding: 10px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none; 
+    padding: 8px; 
+    border-radius: 5px; 
+    font-size: 17px;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    background-color: red;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+}
