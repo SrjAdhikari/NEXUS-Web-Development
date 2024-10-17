@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        h1 {
+            color: tomato;
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        
+        /* Descendant Selector (Space) */
+        main p {
+            color: #fff; 
+            background-color: rgb(20, 17, 34); 
+            font-size: 20px;
+            padding: 10px;
+            list-style: none;
+        }
+
+        div li {
+            font-size: 20px;
+            font-weight: 900;
+            padding: 10px;
+            list-style: none;
+            color: rgb(5, 175, 56);
+            background-color: snow;
+        }
+
+        ul {
+            padding: 5px;
+            background-color: #2474cf;
+        }
+    </style>
+</head>
+<body>
+    <!--* Descendant Selector : Targets an element that is a descendant (child or grandchild) of another element. -->
+    <!-- Syntax : 
+        parent child  {
+            property: value;
+        }
+    -->
+
+
+    <h1>Descendant Selector</h1>
+
+    <main>
+        <div>
+            <!--* This <p> tag is descendant of <main> -->
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex explicabo dolores minus placeat repellendus, labore quidem quae nostrum sapiente corporis.
+            </p>
+        </div>
+
+        <!--* This <p> tag is child of <main> -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatibus nemo ut, quod dolor exercitationem consectetur ex assumenda facere ipsam, iusto quisquam nulla veritatis atque.
+        </p>
+    </main>
+
+    <div>
+        <!--* This <ul> tag is child of <div> -->
+        <ul>
+            <!--* These <li> tag is descendant of <div> -->
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Grape</li>
+            <li>Mango</li>
+            <li>Orange</li>
+        </ul>
+    </div>
+</body>
+</html>
