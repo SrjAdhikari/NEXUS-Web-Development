@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        h1 {
+            color: tomato;
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+
+        div {
+            width: 300px;
+            height: 200px;
+            padding: 30px;
+            margin: 0 auto;
+            border-radius: 10px;
+            background-color: rgb(214, 234, 243);
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* Attribute selector for text input */
+        input[type="text"], input[type="password"] {
+            width: 90%;
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Attribute selector for submit button */
+        input[type="submit"] {
+            width: 50%;
+            font-size: 18px;
+            color: #fff;
+            background-color: #2474cf;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin: 10px 25%;
+        }
+    </style>
+</head>
+<body>
+    <!--* Attribute Selector : Selects elements based on their attributes (like type, href, src, etc.). -->
+    <!-- Syntax : 
+        element[attribute] {
+            property: value;
+        }
+    -->
+
+
+    <h1>Attribute Selector</h1>
+
+    <div>
+        <!-- Username input -->
+        <label for="username">Username : </label>
+        <input 
+            type="text" 
+            id="username" 
+            placeholder="Enter your username"
+        >
+        <br>
+
+        <!-- Password input -->
+        <label for="password">Password : </label>
+        <input 
+            type="password" 
+            id="password" 
+            placeholder="Enter your password"
+        >
+        <br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </div>
+</body>
+</html>
