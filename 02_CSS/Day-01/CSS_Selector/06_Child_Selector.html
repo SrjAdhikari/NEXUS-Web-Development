@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        h1 {
+            color: tomato;
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        
+        /* Child Selector (>) */
+        main > p {
+            color: #fff; 
+            background-color: rgb(20, 17, 34); 
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        div > p {
+            color: #fff; 
+            background-color: rgb(34, 117, 122); 
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        main > div > ul {
+            color: #fff;
+            background-color: #2474cf;
+            font-size: 20px;
+            padding: 15px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <!--* Child Selector : Targets elements that are direct children of a specified parent element. -->
+    <!-- Syntax : 
+        parent > child  {
+            property: value;
+        }
+    -->
+
+
+    <h1>Child Selector</h1>
+
+    <main>
+        <!--* This <div> tag is child of <main> -->
+        <div>
+            <!--* This <p> tag is child of <div> -->
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex explicabo dolores minus placeat repellendus, labore quidem quae nostrum sapiente corporis.
+            </p>
+        </div>
+
+        <!--* This <p> tag is child of <main> -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatibus nemo ut, quod dolor exercitationem consectetur ex assumenda facere ipsam, iusto quisquam nulla veritatis atque.
+        </p>
+    
+
+        <!--* This <div> tag is also a child of <main> -->
+        <div>
+            <!--* This <ul> tag is child of <div> -->
+            <ul>
+                <!--* These <li> tag is child of <ul> -->
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Grape</li>
+                <li>Mango</li>
+                <li>Orange</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
