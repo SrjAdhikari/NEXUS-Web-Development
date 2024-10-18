@@ -1,9 +1,16 @@
+body {
+    font-family: cursive;
+    background-color: whitesmoke;
+}
+
 div {
-    width: 200px;
+    font-size: 20px;
+    width: 300px;
     padding: 5px;
     margin: auto;
     text-align: center;
     border-radius: 10px;
+    background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
