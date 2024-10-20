@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading Rules</title>
+</head>
+<body>
+    <!--* Cascading : In CSS, when multiple styles are defined for an element, cascading determines which styles will be applied. Cascading refers to the logic our browser uses to determine which CSS rulesets are the most important, especially when they conflict with each other.  -->
+
+
+    <!--* Key Factors in Cascading :
+        👉 Importance (using !important) : Adding "!important" to a CSS property gives it the highest priority.
+
+        👉 Specificity : Specificity determines the importance of a selector based on its type. The more specific a selector, the higher priority it has.
+
+            Specifity Calculation :
+            1. Inline Styles : 
+                Specificity value -> (1, 0, 0, 0)
+
+            2. ID Selector : 
+                Specificity value -> (0, 1, 0, 0)
+
+            3. Class selectors, attribute selectors, pseudo-class : 
+                Specificity value -> (0, 0, 1, 0)
+
+            4. Element selectors, pseudo-elements : 
+                Specificity value -> (0, 0, 0, 1)
+
+            5. Universal Selector :
+                Specificity value -> (0, 0, 0, 0)
+
+        👉 Source order : If two styles have the same specificity, the one that occurs last in the source code has higher priority. The last defined rule wins when there is a conflict.
+
+        👉 Inheritance : If an element does not explicitly define a value for these properties, it will inherit the value from its parent.
+
+            1. Inherited Properties : Examples include color, font-size, and line-height.
+            2. Non-Inherited Properties : Properties like padding, margin, and border are not inherited by default.
+    -->
+
+
+    <h1>Cascading Rules</h1>
+</body>
+</html>
