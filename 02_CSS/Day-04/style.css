@@ -1,0 +1,39 @@
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: cursive;
+    background-color: hsl(0, 0%, 94%);
+}
+
+#main-heading {
+    padding: 40px 0;
+    font-weight: 900;
+    font-size: 50px;
+    color: tomato;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+/******** CSS Box Model ********/
+.section-one {
+    width: 800px;
+    color: #fff;
+    border: px solid tomato;
+    background-color: turquoise;
+    background-color: #0f2c59;
+    border: 20px solid #e46a23;
+    padding: 50px;
+    margin: 0 auto;
+}

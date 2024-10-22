@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Box Model</title>
+</head>
+<body>
+    <!--* Box Model : The CSS Box Model describes how the browser calculates the size, positioning, and spacing of elements. -->
+
+    <!--* CSS Box Model Components:
+        👉 Content : 
+            ● The actual text, images, or other media inside an element is the actual content.
+            ● The content area is defined by the width and height properties.
+
+        👉 Padding :
+            ● The space between the actual content and the border of the element.
+            ● Padding increases the distance between the content and the border
+
+        👉 Border :
+            ● The border is a line that surrounds the padding and content of an element.
+            ● We can style the border with thickness, style (solid, dashed, etc.), and color.
+
+        👉 Margin :
+            ● The space outside the element, between the border and neighboring elements.
+            ● Margins can be set differently for each side (top, right, bottom, left).
+    -->
+
+
+    <!--* Box Model Layout:
+        The box model is structured like this (from inside out):
+        👉 Content (the innermost part)
+        👉 Padding (surrounds the content)
+        👉 Border (surrounds the padding)
+        👉 Margin (surrounds the border)
+    -->
+
+
+    <!--* Visual representation of the box model: 
+        +--------------------------------+ 
+        |            Margin              |
+        |  +--------------------------+  |
+        |  |         Border           |  |
+        |  |  +--------------------+  |  |
+        |  |  |      Padding       |  |  |
+        |  |  |  +-------------+   |  |  |
+        |  |  |  |   Content   |   |  |  |
+        |  |  |  +-------------+   |  |  |
+        |  |  +--------------------+  |  |
+        |  +--------------------------+  |
+        +--------------------------------+
+    -->
+
+
+    <!--* Element Total Width & Height: 
+        To calculate the total size of an element, you need to add up:
+            1. The content width/height.
+            2. Padding
+            3. Border thickness.
+
+        👉 Total width = content width + padding left + padding right + border left + border right
+        👉 Total height = content height + padding top + padding bottom + border top + border bottom
+    -->
+
+
+    <!--* Box-SizinG : CSS box-sizing is a property that Controls whether the width/height includes padding and border or not. -->
+
+    <!--* Box-Sizing Property:
+        👉 content-box (default):
+            ● Width/height applies to content only.
+            ● Padding and border are added outside.
+    
+        👉 border-box:
+            ● The total width/height includes padding and borders.
+            ● They don’t increase the element's overall size.
+    -->
+
+
+    <h1 id="main-heading">CSS Box Model</h1>
+    <section class="section-one">
+        <div>
+            <p>
+                Actual Content<br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quibusdam ipsam autem impedit eligendi vitae. Corrupti beatae ab blanditiis sunt atque aliquam optio, quam dignissimos. Est, voluptatum esse quos laboriosam blanditiis temporibus consectetur accusantium quibusdam provident incidunt, eveniet odit? Dolorum voluptas quam soluta, fuga incidunt laboriosam eum labore voluptates. Quia consectetur quidem, maxime assumenda aliquam aliquid explicabo excepturi repudiandae odit tenetur eos molestiae, blanditiis voluptatem cumque debitis ad deleniti delectus omnis hic praesentium accusantium eveniet! Sapiente beatae a minima placeat alias expedita dignissimos quibusdam, veniam, consectetur perspiciatis quasi eos cumque nulla atque quis, aspernatur omnis sequi molestias recusandae qui ab.
+            </p>
+        </div>
+    </section>
+</body>
+</html>
