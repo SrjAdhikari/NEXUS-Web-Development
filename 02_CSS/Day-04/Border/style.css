@@ -1,0 +1,90 @@
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: cursive;
+    background-color: hsl(0, 0%, 94%);
+}
+
+h1 {
+    color: tomato;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div {
+    font-size: 18px;
+    width: 600px;
+    padding: 10px 30px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+p {
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+p.none {
+    border-style: none;
+}
+
+p.dotted {
+    border-width: 5px;
+    border-style: dotted;
+    border-color: blue;
+}
+
+p.dashed {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red;
+}
+
+p.solid {
+    border-width: 5px;
+    border-style: solid;
+    border-color: green;
+}
+
+p.double {
+    border-width: 5px;
+    border-style: double;
+    border-color: blueviolet;
+}
+
+p.groove {
+    border-width: 5px;
+    border-style: groove;
+    border-color: yellowgreen;
+}
+
+p.ridge {
+    border-width: 5px;
+    border-style: ridge;
+    border-color: turquoise;
+}
+
+p.inset {
+    border-width: 5px;
+    border-style: inset;
+    border-color: orange;
+}
+
+p.outset {
+    border-width: 5px;
+    border-style: outset;
+    border-color: tomato;
+}
+
+p.hidden {
+    border-style: hidden;
+}
+
+p.mix {
+    border-width: 5px;
+    border-style: dotted dashed solid double;
+    border-color: blue blueviolet green red;
+}
