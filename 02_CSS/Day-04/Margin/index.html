@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Margin</title>
+</head>
+<body>
+    <!--* Margin: 
+        ● Margin is the space outside the element, between the border and surrounding elements.
+        ● It creates space around elements and does not affect the element's size.
+        ● Margins can be set differently for each side (top, right, bottom, left).
+    -->
+        
+
+    <!--* Margin Properties:
+        👉 margin-top : Set margin on the top side.
+        👉 margin-right : Set margin on the right side.
+        👉 margin-bottom : Set margin on the bottom side.
+        👉 margin-left : Set margin on the left side.
+    -->
+
+
+    <!--* Margin Collapsing: 
+        If top and bottom margins of two elements collapsed, the larger margin is applied instead of adding them together. 
+    -->
+
+
+    <!--* Margin Short-hand Syntax: 
+        ● margin : [margin-top] [margin-right] [margin-bottom] [margin-left];
+        ● margin : [margin-top] [margin-right-left] [margin-bottom];
+        ● margin : [margin-top-bottom] [margin-right-left];
+        ● margin : [margin-top-right-bottom-left];
+    -->
+
+
+    <h1>CSS Margin</h1>
+
+    <div>
+        <p class="margin-in-pixels">
+            <strong>This paragraph has a margin of 50px.</strong><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad necessitatibus totam earum explicabo excepturi corporis officia libero? Sequi, animi consequatur.
+        </p>
+
+        <p>
+            <strong>This is a normal paragraph.</strong><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, qui! A quo commodi laudantium debitis.
+        </p>
+    </div>
+    <br>
+
+    <div>
+        <p class="margin-all-sides">
+            This paragraph has a margin of 20px at the top, 50px at the right,
+            40px at the bottom, and 100px at the left.
+        </p>
+        <p class="margin-in-percent">This paragraph has a margin of 5%.</p>
+    </div>
+</body>
+</html>
