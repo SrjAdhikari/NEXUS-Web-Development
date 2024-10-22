@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: cursive;
+    background-color: aliceblue;
+}
+
+h1 {
+    color: tomato;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+
+div {
+    width: 350px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    border: 2px solid tomato;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h2 {
+    color: orangered;
+    margin: 10px;
+}
+
+p {
+    margin-top: 7px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
