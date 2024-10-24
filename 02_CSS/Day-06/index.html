@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Position Property</title>
+</head>
+<body>
+    <!--* Position Propery:
+        ● The position property defines how an element is positioned in the document.
+        ● The location of the positioned element is set with the four properties: top, left, right, and bottom.
+    -->
+
+
+    <!--* Types of Position Values:
+        👉 Static :
+            ● This is the default positioning for every element.
+            ● Elements with position: static are positioned normally in the document flow (from top to bottom).
+            ● The top, right, bottom, left, and z-index properties have no effect on static elements.
+
+        👉 Relative :
+            ● The element is positioned relative to its original (static) position.
+            ● When we apply top, left, right, or bottom properties, it moves the element from its original position without affecting the layout of surrounding elements.
+
+        👉 Absolute :
+            ● The element is removed from the normal document flow.
+            ● It is positioned relative to its closest positioned ancestor (not necessarily its immediate parent, but the closest ancestor that has position: relative, absolute, or fixed).
+            ● If no positioned ancestor is found, the element is positioned relative to the document (viewport).
+
+        👉 Fixed :
+            ● The element is removed from the normal document flow.
+            ● The element is positioned relative to the browser window (viewport).
+            ● The element stays in the same position when you scroll the page.
+
+        👉 Sticky :
+            ● Elements with position: sticky are a mix between relative and fixed positioning.
+            ● Acts as relative initially, and becomes fixed when it reaches a certain point on the page (usually when scrolling).
+            ● The top, right, bottom, and left properties determine when the sticky behavior is triggered.
+    -->
+
+
+    <!--* Additional Positioning Properties:
+        👉 top : Moves the element down from the top.
+        👉 bottom : Moves the element up from the bottom
+        👉 left : Moves the element right from the left.
+        👉 right : Moves the element left from the right. 
+    -->
+
+
+    <h1>CSS Position Property</h1>
+    <div>
+        <p>position: static</p>
+        <p>position: relative</p>
+        <p>position: absolute</p>
+        <p>position: fixed</p>
+        <p>position: sticky </p>
+    </div>
+</body>
+</html>

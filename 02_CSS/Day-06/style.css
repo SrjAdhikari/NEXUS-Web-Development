@@ -1,0 +1,30 @@
+body {
+    font-family: cursive;
+    background-color: whitesmoke;
+}
+
+
+div {
+    width: 300px;
+    padding: 20px;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+h1 {
+    color: tomato;
+    margin-bottom: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
