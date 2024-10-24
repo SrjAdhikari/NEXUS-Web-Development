@@ -1,0 +1,49 @@
+body {
+    font-family: cursive;
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: tomato;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.parent-container {
+    width: 600px;
+    height: 1000px;
+    font-size: 18px;
+    padding: 50px;
+    margin: auto;
+    border: 2px solid tomato;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.div-item {
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.container1 {
+    background-color: tomato;
+}
+
+.container2 {
+    background-color: #7f0df4;
+    position: sticky;
+    top: 0;
+}
+
+.container3 {
+    background-color: yellowgreen;
+}
+
+.container4 {
+    background-color: seagreen;
+}
+
+.container5 {
+    background-color: goldenrod;
+}
