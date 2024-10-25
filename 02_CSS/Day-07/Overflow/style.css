@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: tomato;
+    margin: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    margin: 5px 55px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visible-container {
+    width: 300px;
+    height: 250px;
+    padding: 0 10px;
+
+    overflow: visible;
+
+    display: inline-block;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hidden-container {
+    width: 300px;
+    height: 250px;
+    padding: 0 10px;
+    margin-left: 30px;
+
+    overflow: hidden;
+
+    display: inline-block;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.scroll-container {
+    width: 300px;
+    height: 250px;
+    padding: 0 10px;
+    margin-left: 30px;
+
+    overflow: scroll;
+
+    display: inline-block;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.auto-container {
+    width: 300px;
+    height: 250px;
+    padding: 0 10px;
+    margin-left: 30px;
+
+    overflow: auto;
+
+    display: inline-block;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

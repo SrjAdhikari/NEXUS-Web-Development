@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Overflow</title>
+</head>
+<body>
+    <!--* Overflow:
+        ● The overflow property controls what happens to content when it overflows (i.e., exceeds) its container’s box. 
+        ● It helps manage scrollbars or hiding content.
+        ● Default value of overflow is visible.
+    -->
+
+
+    <!--* Key Points:
+        👉 overflow: visible -> Content that overflows the container is fully visible (default behavior).
+        👉 overflow: hidden -> Content that overflows is cut off (hidden) and not visible.
+        👉 overflow: scroll -> Adds scrollbars (both horizontal and vertical) even if the content fits within the container.
+        👉 overflow: auto -> Adds scrollbars only if the content overflows.
+    -->
+
+
+    <h1>CSS Overflow</h1>
+
+    <div class="container">
+        <div class="visible-container">
+            <h3>Overflow Visible</h3>
+            <p>
+                "Mostly, when you see programmers, they aren't doing anything.
+                One of the attractive things about programmers is that you
+                cannot tell whether or not they are working simply by looking at
+                them. Very often they're sitting there seemingly drinking coffee
+                and gossiping, or just staring into space. What the programmer
+                is trying to do is get a handle on all the individual and
+                unrelated ideas that are scampering around in his head." <br>
+                — Charles M. Strauss
+            </p>
+        </div>
+
+        <div class="hidden-container">
+            <h3>Overflow Hidden</h3>
+            <p>
+                "Mostly, when you see programmers, they aren't doing anything.
+                One of the attractive things about programmers is that you
+                cannot tell whether or not they are working simply by looking at
+                them. Very often they're sitting there seemingly drinking coffee
+                and gossiping, or just staring into space. What the programmer
+                is trying to do is get a handle on all the individual and
+                unrelated ideas that are scampering around in his head." <br>
+                — Charles M. Strauss
+            </p>
+        </div>
+
+        <div class="scroll-container">
+            <h3>Overflow Scroll</h3>
+            <p>
+                "Mostly, when you see programmers, they aren't doing anything.
+                One of the attractive things about programmers is that you
+                cannot tell whether or not they are working simply by looking at
+                them. Very often they're sitting there seemingly drinking coffee
+                and gossiping, or just staring into space. What the programmer
+                is trying to do is get a handle on all the individual and
+                unrelated ideas that are scampering around in his head." <br>
+                — Charles M. Strauss
+            </p>
+        </div>
+
+        <div class="auto-container">
+            <h3>Overflow Auto</h3>
+            <p>
+                "Mostly, when you see programmers, they aren't doing anything.
+                One of the attractive things about programmers is that you
+                cannot tell whether or not they are working simply by looking at
+                them. Very often they're sitting there seemingly drinking coffee
+                and gossiping, or just staring into space. What the programmer
+                is trying to do is get a handle on all the individual and
+                unrelated ideas that are scampering around in his head." <br>
+                — Charles M. Strauss
+            </p>
+        </div>
+    </div>
+</body>
+</html>
