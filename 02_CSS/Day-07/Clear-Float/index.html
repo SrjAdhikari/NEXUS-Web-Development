@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Clear Float</title>
+</head>
+<body>
+    <!--* Clear Float:
+        ● The clear property is used to prevent elements from wrapping around floated elements.
+        ● It prevents elements from being wrapped around or adjacent to floated elements.
+        ● Ensures elements appear below floated elements.
+    -->
+
+
+    <!--* Key Points:
+        👉 clear: left -> Ensures the element moves below any floated elements on the left.
+        👉 clear: right -> Ensures the element moves below floated elements on the right.
+        👉 clear: both -> Ensures the element moves below any floating elements (both left and right)
+        👉 clear: none is the default and allows floating.
+    -->
+
+
+    <h1>CSS Clear Float</h1>
+    <div class="container">
+        <div class="clear-none-container">
+            <h3>Clear None</h3>
+            <img
+                src="https://www.seekpng.com/png/detail/109-1093815_doraemon-png-png-images-doraemon-png.png"
+                alt="A flying Doremon image"
+                class="img1"
+            />
+            <p>
+                Doraemon is a beloved cartoon character adored by kids all over
+                the world. He is a robotic cat from the future who travels back
+                in time to help a young boy named Nobita. With his magical
+                gadgets and clever solutions, Doraemon always manages to turn
+                Nobita's troubles into exciting adventures.
+            </p>
+        </div>
+
+        <div class="clear-right-container">
+            <h3>Clear Right</h3>
+            <img
+                src="https://www.seekpng.com/png/detail/109-1093815_doraemon-png-png-images-doraemon-png.png"
+                alt="A flying Doremon image"
+                class="img2"
+            />
+            <p>
+                Doraemon is a beloved cartoon character adored by kids all over
+                the world. He is a robotic cat from the future who travels back
+                in time to help a young boy named Nobita. With his magical
+                gadgets and clever solutions, Doraemon always manages to turn
+                Nobita's troubles into exciting adventures.
+            </p>
+        </div>
+
+        <div class="clear-left-container">
+            <h3>Clear Left</h3>
+            <img
+                src="https://www.seekpng.com/png/detail/109-1093815_doraemon-png-png-images-doraemon-png.png"
+                alt="A flying Doremon image"
+                class="img3"
+            />
+            <p>
+                Doraemon is a beloved cartoon character adored by kids all over
+                the world. He is a robotic cat from the future who travels back
+                in time to help a young boy named Nobita. With his magical
+                gadgets and clever solutions, Doraemon always manages to turn
+                Nobita's troubles into exciting adventures.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
