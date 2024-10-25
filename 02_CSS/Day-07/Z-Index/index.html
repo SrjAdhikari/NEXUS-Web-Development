@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Z-Index</title>
+</head>
+<body>
+    <!--* Z-Index:
+        ● The z-index property in CSS is used to control the stack order of elements on a web page.
+        ● It determines which elements appear on top of others when they overlap when they overlap in the same space.
+        ● Higher z-index values place the element above other elements.
+        ● Lower z-index values place the element below other elements.
+        ● Only works on elements that have a position property other than static.
+        ● Default value of z-index is auto.
+    -->
+
+
+    <h1>CSS Z-Index</h1>
+    <div class="container">
+        <div class="box container1">
+            position: relative; <br/>z-index: 7;
+        </div>
+
+        <div class="box container2">
+            position: relative; <br/>z-index: 5;
+        </div>
+
+        <div class="box container3">
+            position: relative; <br/>z-index: 3;
+        </div>
+    </div>
+</body>
+</html>
