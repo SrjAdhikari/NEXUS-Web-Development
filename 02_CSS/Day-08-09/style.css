@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    background-color: #fff;
+}
+
+/* Header Section Style Start Here */
+.head-container {
+    padding-top: 10px;
+    background-color: #fff;
+}
+
+.head-first {
+    margin-left: 150px;
+}
+
+.head-second {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    cursor: pointer;
+
+    position: sticky;
+    top: 0;
+}
+
+.dining-out {
+    margin-left: 100px;
+}
+
+.head-third {
+    height: 400px;
+    background-color: rgb(248, 248, 248);
+}
+
+.brand-name {
+    font-size: 18px;
+    color: #ff4f5a;
+    font-weight: 900;
+    margin-right: 50px;
+}
+
+.search {
+    width: 40vw;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-left: 20px;
+    margin-right: 50px;
+    border: 1px solid rgb(216, 214, 214);
+    border-radius: 10px;
+    position: relative;
+    bottom: 8px;
+}
+
+.search:hover {
+    box-shadow: 2px 2px 10px rgb(216, 214, 214);
+}
+
+.search input {
+    width: 30vw;
+    height: 45px;
+    color: #535151;
+    font-size: 18px;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+}
+
+.search input::placeholder {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(169, 169, 172);
+}
+
+.container .image img {
+    width: 35px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 50px;
+    transition: opacity 0.3s ease;
+}
+
+.dining, .delivery, .nightlife {
+    font-size: 17px;
+    font-weight: 500;
+    color: #929191;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+.dining p {
+    color: tomato;
+    border-bottom: 2px solid tomato;
+
+}
+
+.head-second p:hover {
+    border-bottom: 2px solid tomato;
+}
+
+.container button {
+    padding: 10px 20px;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #b4b2b2;
+    background-color: #fff;
+    
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    position: relative;
+    bottom: 8px;
+}
+
+.container button:hover {
+    color: #Fff;
+    background-color: #ff4f5a;
+}
+
+.collection {
+    margin: 20px 5px 0 10px;
+    cursor: pointer;
+}
+
+.collection-image {
+    height: 255px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.collection-image:hover {
+    transform: scale(1.1);
+}
+
+.top-trend {
+    margin-left: 150px;
+}
+
+.top-trend-image, .best-place-image, .halloween-image, .diwali-image {
+    position: relative;
+}
+
+.head-third h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #1d1c1c;
+    margin-left: 150px;
+    padding-top: 10px;
+}
+
+.head-third .description {
+    font-size: 17px;
+    font-weight: 300;
+    color: #929191;
+    margin-left: 150px;
+    padding-top: 20px;
+}
+
+.head-third .description span {
+    color: tomato;
+    padding-left: 65px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 23px;
+}
+
+.place {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.title, .place {
+    color: whitesmoke;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+/* Header Section Style End Here */
+
+
+/* Main Section Style Start Here */
+main {
+    background-color: #fff;
+}
+
+.filter-card {
+    padding-top: 30px;
+}
+
+.filter-option {
+    margin-left: 150px;
+}
+
+.filter-option p {
+    color: #929090;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border-radius: 8px;
+    border: 1px solid #929090;
+    cursor: pointer;
+}
+
+.filter-option p:hover {
+    background-color: #929090;
+    color: #fff;
+}
+
+.half-discount {
+    margin: 35px 0 0 150px;
+}
+
+.discount-image {
+    height: 250px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #1d1c1c;
+    margin-left: 150px;
+    padding-top: 30px;
+}
+
+.card {
+    display: inline-block;
+    margin: 10px 0 0 10px;
+    border: 10px solid #Fff;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 15px;
+    transition: 0.1s;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+}
+
+.restaurant-container {
+    margin-left: 140px;
+}
+
+.container {
+    display: inline-block;
+}
+
+.restaurant-image {
+    height: 200px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.discount {
+    width: 50%;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px 15px;
+
+    color: #fff;
+    background-color: rgba(71, 130, 231, 0.85);
+    border-radius: 5px;
+
+    position: absolute;
+    bottom: 15px;
+}
+
+/* Restaurnat Info Container Styles */
+.restaurant-info, .food-info, .location-info {
+    margin: 5px 0;
+    position: relative;
+}
+
+.restaurant-name p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.rating {
+    height: 22px;
+    width: 42px;
+    padding: 3px;
+    color: #fff;
+    background-color: rgb(37, 126, 62);
+    border-radius: 5px;
+
+    position: absolute;
+    right: 5px;
+}
+
+.rating p {
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 2px;
+}
+
+.fa-star {
+    font-size: 10px;
+}
+
+/* Food Info Container Styles */
+.food-name, .price {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(118, 115, 115);
+}
+
+.price, .distance {
+    position: absolute;
+    right: 5px;
+}
+
+/* Location Info Container Styles */
+.location p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(177, 174, 174);
+}
+
+.distance p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Main Section Style End Here */
+
+
+/* Article Section Style Start Here */
+article {
+    margin-top: 20px;
+    background-color: rgb(254, 254, 250);
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #4d4c4c;
+    margin-left: 150px;
+    padding: 15px 0;
+}
+
+.explore-option {
+    width: 70vw;
+    margin-left: 150px;
+}
+
+.explore-option p {
+    color: #929090;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 20px 15px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #e2e1e1;
+    cursor: pointer;
+    position: relative;
+}
+
+.explore-option p:hover {
+    border-color: tomato;
+}
+
+.explore-option span {
+    font-size: 20px;
+    position: absolute;
+    right: 35px;
+}
+
+/* Article Section Style End Here */
+
+
+/* Footer Section Style Start Here */
+footer {
+    width: 70vw;
+    background-color: #fff;
+    text-align: left;
+    font-size: 13px;
+    margin-left: 150px;
+}
+
+hr {
+    width: 68vw;
+    border: none;
+    height: 1px;
+    background-color: #d3d3d3; /* Light gray color */
+}
+
+footer p {
+    font-size: 13px;
+    color: #929090;
+    padding: 20px 0;
+}
+
+/* Footer Section Style End Here */
