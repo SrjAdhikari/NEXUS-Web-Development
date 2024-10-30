@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex Direction</title>
+</head>
+<body>
+    <!--* Flex-Direction (Row or Column):
+        👉 The flex-direction property sets the direction of the flex items.
+        👉 flex-direction: row | row-reverse | column | column-reverse
+
+        ● row : Default, Items are placed in a row (horizontal).
+        ● row-reverse : Items are placed in a row, but in reverse order (i.e. right-to-left).
+        ● column : Items are placed in a column (vertical).
+        ● column-reverse : Items are placed in a column, but in reverse order (i.e. bottom-to-top).
+    -->
+
+    <h1>Flex Direction</h1>
+    
+    <div class="container">
+        <h3>flex-direction: row</h3>
+        <div class="row">
+            <div class="kitty">
+                <img src="../images/kitty.png" alt="kitty image">
+            </div>
+
+            <div class="cat">
+                <img src="../images/cat.png" alt="cat image">
+            </div>
+
+            <div class="elephant">
+                <img src="../images/elephant.png" alt="elephant image">
+            </div>
+        </div>
+
+        <h3>flex-direction: row-reverse</h3>
+        <div class="row-reverse">
+            <div class="kitty">
+                <img src="../images/kitty.png" alt="kitty image">
+            </div>
+
+            <div class="cat">
+                <img src="../images/cat.png" alt="cat image">
+            </div>
+
+            <div class="elephant">
+                <img src="../images/elephant.png" alt="elephant image">
+            </div>
+        </div>
+
+        <div class="col-container">
+            <div class="column">
+                <h3>flex-direction: column</h3>
+                <div class="kitty">
+                    <img src="../images/kitty.png" alt="kitty image">
+                </div>
+
+                <div class="cat">
+                    <img src="../images/cat.png" alt="cat image">
+                </div>
+
+                <div class="elephant">
+                    <img src="../images/elephant.png" alt="elephant image">
+                </div>
+            </div>
+
+            <div class="column-reverse">
+                <h3>flex-direction: column-reverse</h3>
+                <div class="kitty">
+                    <img src="../images/kitty.png" alt="kitty image">
+                </div>
+
+                <div class="cat">
+                    <img src="../images/cat.png" alt="cat image">
+                </div>
+
+                <div class="elephant">
+                    <img src="../images/elephant.png" alt="elephant image">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
