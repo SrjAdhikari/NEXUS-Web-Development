@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FlexItem Properties</title>
+</head>
+<body>
+    <h1>FlexItem Properties</h1>
+
+    <div class="order-card">
+        <h3>Before Order :</h3>
+        <div class="container before">
+            <div class="box box1"> 1 </div>
+            <div class="box box2"> 2 </div>
+            <div class="box box3"> 3 </div>
+            <div class="box box4"> 4 </div>
+            <div class="box box5"> 5 </div>
+        </div>
+
+        <h3>After Order :</h3>
+        <div class="container after">
+            <div class="box box1"> 1 
+                <p>order: 0;</p>
+            </div>
+            <div class="box box2"> 2 
+                <p>order: 3;</p>
+            </div>
+            <div class="box box3"> 3 
+                <p>order: 1;</p>
+            </div>
+            <div class="box box4"> 4 
+                <p>order: 0;</p>
+            </div>
+            <div class="box box5"> 5 
+                <p>order: -1;</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grow-card">
+        <h3>Before Grow : </h3>
+        <div class="container before">
+            <div class="box box1"> 1 </div>
+            <div class="box box2"> 2 </div>
+            <div class="box box3"> 3 </div>
+        </div>
+
+        <h3>After Grow : </h3>
+        <div class="container after">
+            <div class="box box1"> 1 
+                <p>flex-grow: 1;</p>
+            </div>
+            <div class="box box2"> 2 
+                <p>flex-grow: 3;</p>
+            </div>
+            <div class="box box3"> 3 </div>
+        </div>
+    </div>
+
+    <div class="shrink-card">
+        <h3>Before Shrink : </h3>
+        <div class="container before">
+            <div class="box box1"> 1 </div>
+            <div class="box box2"> 2 </div>
+            <div class="box box3"> 3 </div>
+            <div class="box box4"> 4 </div>
+            <div class="box box5"> 5 </div>
+        </div>
+
+        <h3>After Shrink : </h3>
+        <div class="container after">
+            <div class="box box1"> 1 </div>
+            <div class="box box2"> 2 </div>
+            <div class="box box3"> 3 </div>
+            <div class="box box4"> 4 </div>
+            <div class="box box5"> 5 </div>
+            <div class="box box6"> 6 </div>
+        </div>
+    </div>
+
+    <div class="basis-card">
+        <h3>Before Basis : </h3>
+        <div class="container before">
+            <div class="box box1"> 1 </div>
+            <div class="box box2"> 2 </div>
+            <div class="box box3"> 3 </div>
+            <div class="box box4"> 4 </div>
+            <div class="box box5"> 5 </div>
+        </div>
+
+        <h3>After Basis : </h3>
+        <div class="container after">
+            <div class="box box1"> 1 
+                <p>flex-basis: 300px;</p>
+            </div>
+            <div class="box box2"> 2 </div>
+            <div class="box box3"> 3 
+                <p>flex-basis: 350px;</p>
+            </div>
+            <div class="box box4"> 4 </div>
+            <div class="box box5"> 5 </div>
+        </div>
+    </div>
+
+    <div class="align-card">
+        <h3>Before <br> Align-self : </h3>
+        <div class="container before">
+            <div class="box box1"> 1 </div>
+            <div class="box box2"> 2 </div>
+            <div class="box box3"> 3 </div>
+            <div class="box box4"> 4 </div>
+            <div class="box box5"> 5 </div>
+        </div>
+
+        <h3>After <br> Align-self: </h3>
+        <div class="container after">
+            <div class="box box1"> 1 
+                <p>flex-start</p>
+            </div>
+            <div class="box box2"> 2 
+                <p>center</p>
+            </div>
+            <div class="box box3"> 3 
+                <p>flex-end</p>
+            </div>
+            <div class="box box4"> 4 
+                <p>center</p>
+            </div>
+            <div class="box box5"> 5 
+                <p>stretch</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
