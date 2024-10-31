@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS FlexItem Property</title>
+</head>
+<body>
+    <!--* Flex Items:
+        ● Flex items are children elements inside the flex container.
+        ● These items will be positioned and aligned based on the container’s flex properties.
+    -->
+
+
+    <!--* FlexItem Properties: 
+        👉 order (Controls Item Placement) :
+            ● Defines the order in which the item is positioned within the flex container without altering the HTML structure.
+            ● Default: 0 (all items have the same order by default and appear as per the HTML structure).
+
+            ● Items with lower order values appear earlier.
+            ● Items with higher order values appear later.
+            ● If two items have the same order, they keep the order defined in the HTML structure.
+
+
+        👉 flex-grow (Controls Item Growth) : 
+            ● Defines how much a flex item should grow relative to other items when extra space is available in the container.
+            ● Default: 0 (items don’t grow by default)
+            ● If one item has flex-grow: 1 and another has flex-grow: 2, the second item will grow twice as much as the first one if there’s extra space in the container.
+
+
+        👉 flex-shrink (Controls Item Shrinking) : 
+            ● Controls how much a flex item should shrink relative to other items when there isn’t enough space in the container. 
+            ● Default: 1 (items will shrink if needed)
+            ● If one item has flex-shrink: 1 and another has flex-shrink: 0, the first item will shrink if needed, but the second won’t shrink at all.
+
+
+        👉 flex-basis (Defines Item’s Initial Size) : 
+            ● Sets the initial size of a flex item before any space distribution happens based on flex-grow or flex-shrink.
+            ● Default: auto (item’s content width or height determines its size)
+            ● flex-basis defines the item’s starting size, and then the flex-grow and flex-shrink properties adjust the item’s size from there.
+            ● If flex-basis is set to 0, the item won’t have an initial size, and flex-grow and flex-shrink will entirely determine its size.
+
+
+        👉 align-self (Aligns Individual Item Along Cross Axis) : 
+            ● Allows you to override the align-items property for an individual item, aligning it differently from the rest.
+            ● Default: auto (item’s cross axis alignment)
+            ● If the container’s align-items is set to flex-start, but you set one item’s align-self to center, that item will be centered along the cross axis, while the other items are at the start.
+
+
+        👉 flex (Shorthand for flex-grow, flex-shrink, and flex-basis) : 
+            ● The flex property is a shorthand that combines flex-grow, flex-shrink, and flex-basis into a single line.
+            ● Syntax: flex: [flex-grow] [flex-shrink] [flex-basis];
+    -->
+
+
+    <h1>CSS FlexItem Property</h1>
+    <div>
+        <p>👉 <span>order : </span>Integer (Positive, Negative, or Zero)</p>
+        <p>👉 <span>flex-grow : </span>Any positive number</p>
+        <p>👉 <span>flex-shrink : </span>Any positive number</p>
+        <p>👉 <span>flex-basis : </span>Length (px, %, em, or auto)</p> 
+        <p>👉 <span>align-self : </span>auto | flex-start | flex-end | center | baseline | stretch</p>
+    </div>
+</body>
+</html>

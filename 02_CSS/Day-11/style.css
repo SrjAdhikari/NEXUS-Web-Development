@@ -1,0 +1,35 @@
+body {
+    font-family: cursive;
+    background-color: whitesmoke;
+}
+
+
+div {
+    width: 650px;
+    padding: 20px;
+    font-size: 20px;
+    margin: auto;
+    text-align: left;
+    border: 3px solid tomato;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+h1 {
+    color: tomato;
+    margin-bottom: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div p span {
+    color: tomato;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+div p {
+    font-size: 18px;
+}
