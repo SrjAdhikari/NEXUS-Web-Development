@@ -86,7 +86,6 @@ body {
 .signup button:hover {
     background-color: #fff;
     color: #f74464;
-    border: 1px solid #f74464;
 }
 
 /* Header Section Style End Here */
@@ -228,7 +227,6 @@ main .banner img {
 .premiere-movie-section {
     display: flex;
     overflow-x: scroll;
-    /* gap: 20px; */
 }
 
 .premiere-movie-section .card {
