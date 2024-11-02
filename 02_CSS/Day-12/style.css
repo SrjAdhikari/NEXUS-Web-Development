@@ -16,15 +16,8 @@ body {
 .header-container {
     display: flex;
     justify-content: space-evenly;
-    background-color: #fff;
+    background-color: #000;
     padding: 20px 0;
-}
-
-/* Logo Style */
-.header-container .logo {
-    font-size: 1.5em;
-    font-weight: 600;
-    color: #f74464;
 }
 
 /* Search Bar Style */
@@ -36,13 +29,15 @@ body {
 }
 
 .header-container .search-bar:hover {
-    border: 1px solid rgba(247, 68, 100, 0.4);
+    /* border: 1px solid rgba(247, 68, 100, 0.4); */
     box-shadow: 2px 2px 10px rgb(216, 214, 214);
 }
 
 .header-container .search-bar input {
     width: 30vw;
     margin: 8px;
+    color: #fff;
+    background-color: #000;
     border: none;
     outline: none;
 }
@@ -66,13 +61,14 @@ body {
 }
 
 .location p {
+    color: #fff;
     font-size: 0.8rem;
     font-weight: 300;
 }
 
 .location .fa-caret-down {
     font-size: 0.7rem;
-    color: rgb(145, 145, 146);
+    color: #fff;
     padding: 0 15px;
 }
 
@@ -200,3 +196,127 @@ main .banner img {
 }
 
 /* Movie Section, Event Section Style End Here */
+
+
+/* Premiere Section Style Start Here */
+.premiere-section {
+    margin-top: 35px;
+    background-color: #2b3149;
+}
+
+.premiere-section > img {
+    height: 75px;
+    margin: 20px;
+}
+
+.premiere-section .premieres {
+    color: #dcd9d9;
+    margin-left: 20px;
+}
+
+.premiere-section .premieres h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.premiere-section .premieres p {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Premiere Movie Section */
+.premiere-movie-section {
+    display: flex;
+    overflow-x: scroll;
+    /* gap: 20px; */
+}
+
+.premiere-movie-section .card {
+    border: 10px solid #2b3149;
+    cursor: pointer;
+}
+
+.premiere-movie-section .card img {
+    height: 250px;
+    border-radius: 10px;
+}
+
+/* Movie Title, Movie Genre Style */
+.premiere-movie-section .card .title {
+    color: #fff;
+    line-height: 15px;
+}
+
+.premiere-movie-section .card .title h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.premiere-movie-section .card .title p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+/* Premiere Section Style End Here */
+
+
+/* Footer Section Style Start Here */
+.footer-section {
+    height: 200px;
+    background-color: #343338;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    padding-top: 20px;
+}
+
+.logo-container  .logo {
+    height: 30px;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: rgb(100, 100, 101);
+    margin: 0 20px;
+}
+
+.social-media {
+    margin: 30px 0;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.social-media ul li {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background-color: #656464;
+    border-radius: 50%;
+}
+
+.social-media ul li i {
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+.social-media ul li:hover {
+    background-color: #f5f5f5;
+}
+
+.copy-right {
+    font-size: 0.6rem;
+    font-weight: 300;
+    color: rgb(121, 121, 123);
+    text-align: center;
+}
