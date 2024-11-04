@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Box Shadow</title>
+</head>
+<body>
+    <!--* CSS Box Shadow:
+        ● The box-shadow property in CSS is used to add shadow effects around an element's box.
+        ● Syntax :- box-shadow: horizontal-shadow vertical-shadow blur-radius spread-radius color (inset);
+    -->
+
+    <!--* Box Shadow Components:
+        👉 Horizontal-shadow (h-shadow) : 
+            ● The distance of the shadow from the left or right of the element.
+            ● Value: Can be positive (shadow is to the right) or negative (shadow is to the left).
+            ● Example: 5px means the shadow is 5 pixels to the right.
+
+
+        👉 Vertical-shadow (v-shadow) : 
+            ● The distance of the shadow from the top or bottom of the element.
+            ● Value: Value: Can be positive (shadow is below) or negative (shadow is above).
+            ● Example: Example: 5px means the shadow is 5 pixels below.
+
+
+        👉 blur-radius : 
+            ● Specifies the value to control the blurriness of the shadow.
+            ● The higher the value, the more blurred the shadow will be.
+            ● Value: Must be a positive number. If omitted, it defaults to 0 (sharp shadow).
+            ● Example: 10px means a blurred shadow.
+
+
+        👉 spread-radius : 
+            ● Specifies the value to expand or contract the shadow.
+            ● A positive value will make the shadow larger, while a negative value will make it smaller.
+            ● Value: Can be positive or negative.
+            ● Example: 5px means the shadow expands outward by 5 pixels.
+
+
+        👉 color : 
+            ● The color of the shadow. This can be specified using color names, HEX, RGB, RGBA, HSL, or HSLA.
+            ● Value: Any valid CSS color value.
+            ● Example: rgba(0, 0, 0, 0.5) for a semi-transparent black shadow.
+
+
+        👉 inset : 
+            ● Specifies whether the shadow should be inside or outside of the element's box.
+            ● Value: Can be one of the following
+                1. inset : The shadow is inside the element's box.
+                2. outset : The shadow is outside the element's box.
+    -->
+
+
+    <h1>Box Shadow</h1>
+    <div class="container">
+        <div class="box box1">
+            box-shadow: -7px 5px 5px orange;
+        </div>
+        <div class="box box2">
+            box-shadow: 10px -10px 5px 0px rgba(0,0,0,0.75);
+        </div>
+        <div class="box box3">
+            box-shadow: 10px 10px 15px tomato;
+        </div>
+        <div class="box box4">
+            box-shadow: 0px 0px 10px 5px purple;
+        </div>
+        <div class="box box5">
+            box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.75);
+        </div>
+        <div class="box box6">
+            box-shadow: inset 0px 0px 10px 5px rgb(7, 188, 134);
+        </div>
+    </div>
+</html>
