@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Transitions</title>
+</head>
+<body>
+    <!--* CSS Transitions:
+        ● CSS transitions enable smooth changes in the CSS property values over the specified duration
+        ● Syntax:
+            transition: property duration timing-function delay;
+    -->
+
+    <!--* CSS Transition Properties:
+        👉 transition-property : 
+            ● The transition-property specifies the CSS properties to which a transition should be applied.
+            ● Syntax: 
+                transition-property: none | all | property-name
+            ● This can be any animatable property (like width, height, background-color, etc.).
+            ● Example: background-color, width.
+
+
+        👉 transition-duration : 
+            ● The transition-duration property specifies the time for the completion of the transition.
+            ● Syntax: 
+                transition-duration: time;
+            ● The time can be specified in seconds(s) or milliseconds(ms).
+            ● Example: 2s for two seconds or 500ms for half a second.
+
+
+        👉 transition-timing-function : 
+            ● The transition-timing-function property defines how transition properties change during a transition.
+            ● Syntax: 
+                transition-timing-function: ease | linear | ease-in | ease-out | ease-in-out
+                👉 ease :  Starts slowly, speeds up in the middle, and slows down at the end.
+                👉 linear : The transition progresses at a constant pace.
+                👉 ease-in : The transition starts slow and then speeds up.
+                👉 ease-out : The transition starts fast and then slows down.
+                👉 ease-in-out : The transition starts slow, speeds up, and then slows down again.
+
+
+        👉 transition-delay : 
+            ● The transition-delay property specifies the time duration for a transition to start.  
+            ● Syntax: 
+                transition-delay: time;
+            ● The time can be specified in seconds(s) or milliseconds(ms).
+            ● Example: 1s means the transition will start after one second.
+
+
+        👉 CSS Transition Shorthand Property : 
+            ● Syntax:
+                transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]
+    -->
+
+
+    <h1>CSS Transitions</h1>
+    <div class="container">
+        <p>👉 <span>transition-property : </span>width | height | background-color | color | etc.</p>
+        <p>👉 <span>transition-duration : </span>1s | 2s | 5s | 100ms | 500ms | etc.</p>
+        <p>👉 <span>transition-timing-function : </span>linear | ease | ease-in | ease-out | ease-in-out</p>
+        <p>👉 <span>transition-delay : </span>1s | 2s | 5s | 100ms | 500ms | etc.</p>
+        
+        <h2>Transition Shorthand Property</h2>
+        <p>👉 <span>transition : </span>[transition-property] [transition-duration] [transition-timing-function] [transition-delay]</p>
+    </div>
+
+    <div class="transition">
+        <div class="box box1">Hover the box <br>Ease</div>
+        <div class="box box2">Hover the box <br>Linear</div>
+        <div class="box box3">Hover the box <br>Ease-In</div>
+        <div class="box box4">Hover the box <br>Ease-Out</div>
+        <div class="box box5">Hover the box <br>Ease-In-Out</div>
+    </div>
+</body>
+</html>
