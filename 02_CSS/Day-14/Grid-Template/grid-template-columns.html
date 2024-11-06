@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Grid Template Columns</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", serif;
+            background-color: whitesmoke;
+        }
+
+        h1 {
+            color: tomato;
+            margin: 20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .container {
+            width: 700px;
+            height: 250px;
+            font-size: 15px;
+            margin: auto;
+            margin-bottom: 20px;
+            text-align: left;
+            border: 2px solid #000;
+            background-color: #fff;
+        }
+
+        .item {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid #000;
+            background-color: tomato;
+        }
+
+        .container-one {
+            display: grid;
+
+            /* creates a three columns of size 200px, 200px, 200px respectively */
+            grid-template-columns: 200px 200px 200px;
+
+            /* Alternatively of the above, we can use repeat(3, 200px)
+            grid-template-columns: repeat(3, 200px); */
+        }
+
+        .container-two {
+            display: grid;
+
+            /* First column takes 1 part, second takes 2 parts and third takes 3 parts */
+            grid-template-columns: 1fr 2fr 3fr;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Template Columns</h1>
+
+    <p>👉 grid-template-columns : 200px 200px 200px</p>
+    <div class="container container-one">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+    <p>👉 grid-template-columns : 1fr 2fr 3fr</p>
+    <p>👉 The fractional unit (fr) distributes available space within the grid container among columns or rows.</p>
+    <div class="container container-two">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+</html>
