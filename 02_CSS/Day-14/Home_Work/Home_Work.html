@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Home Work</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", serif;
+            background-color: whitesmoke;
+        }
+
+        h1 {
+            color: tomato;
+            margin: 20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .container {
+            display: grid;
+
+            /* defines 3 rows and 4 columns */
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            padding: 7px;
+            border-radius: 5px;
+            background-color: rgb(30, 26, 75);
+        }
+
+        .item {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 40px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: yellowgreen;
+        }
+
+        .item-1 {
+            /* grid-row-start: 1;
+            grid-row-end: 4; */
+
+            /* Alternate way to define the row start and end */
+            /* row-start / row-end -> 1 / 4 */
+            grid-row: 1 / 4;
+        }
+
+        .item-2 {
+            /* column-start / column-end -> 2 / 4 */
+            grid-column: 2 / 4;
+        }
+
+        .item-6 {
+            grid-row: 2 / 4;
+            grid-column: 4 / 5;
+        }
+
+        .item-3, .item-5, .item-7 {
+            background-color: tomato;
+        }
+
+        .item-4, .item-8 {
+            background-color: rgb(228, 202, 8);
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Template Home Work</h1>
+
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+        <div class="item item-8">8</div>
+    </div>
+</body>
+</html>
