@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Grid</title>
+</head>
+<body>
+    <!--* CSS Grid:
+        ● The CSS Grid is a two-dimensional layout system that allows designers and developers to create complex and responsive layouts with ease.
+    -->
+
+    <!--* Grid Layout Terminologies:
+        👉 Grid Container:
+            ● The Grid container is a parent element that holds the grid items.
+            ● To create a grid container, set display: grid; on the container.
+
+        👉 Grid Items:
+            ● Grid items are the direct children of the grid container.
+            ● We can control the placement, size, and order of these grid items within the grid structure.
+
+        👉 Grid Line:
+            ● Grid Lines are the dividing lines that create rows and columns within the grid.
+            ● Horizontal lines separate rows, and vertical lines separate columns.
+            ● Grid lines are numbered starting from 1 (from left to right for columns, and from top to bottom for rows)
+
+        👉 Grid Track:
+            ● The grid track refers to the adjacent space between two grid lines.
+            ● This can be vertical or horizontal space
+
+        👉 Grid Area:
+            ● Grid area refers to the space surrounded by four grid lines.
+            ● A grid area can have any number of grid cells.
+            ● We can name grid areas and place grid items within specific named areas.
+
+        👉 Grid Cell:
+            ● Grid cells are the individual units formed by the intersection of rows and columns.
+            ● It is the space between two adjacent row and column grid lines.
+
+        👉 Grid Gap:
+            ● The grid gap refers to the space between the rows and columns in a grid.
+            ● It is a shorthand property for setting row-gap and column-gap.
+    -->
+
+
+    <!--* Grid Container Properties:
+        ● Specifying the Grid Rows and Columns:
+            👉 display: grid -> Turns an HTML element into a grid container.
+            👉 grid-template-columns : Defines the number and width of columns.
+            👉 grid-template-rows : Defines the number and height of rows.
+            👉 grid-template-areas : Defines named grid areas where the grid items can be placed.
+            👉 grid-template : A shorthand for defining one property's rows, columns, and areas.
+
+        ● Specifying the Grid Row and Column Gap:
+            👉 grid-column-gap : Defines the space between columns.
+            👉 grid-row-gap : Defines the space between rows.
+            👉 grid-gap : A shorthand for defining both row and column gaps.
+
+        ● Aligning the Grid:
+            👉 justify-content : Aligns the grid horizontally within the container (start, end, center, space-between, space-around, etc.).
+            👉 align-content : Aligns the grid vertically within the container (start, end, center, space-between, space-around, etc.).
+            👉 place-content : A shorthand for aligning content both horizontally and vertically.
+
+        ● Aligning the Grid Items:
+            👉 justify-items : Aligns items horizontally (left, right, center, or stretch).
+            👉 align-items : Aligns items vertically (top, bottom, center, or stretch).
+            👉 place-items : A shorthand for aligning items both horizontally and vertically.
+
+        ● Setting Automatic Grid Tracks:
+            👉 grid-auto-columns : Defines the size of automatically generated columns.
+            👉 grid-auto-rows : Defines the size of automatically generated rows.
+            👉 grid-auto-flow : Defines the placement of auto-generated grid items.
+    -->
+
+
+    <h1>CSS Grid Container Properties</h1>
+    <div>
+        <p>👉 <span>display : </span>grid</p>
+        <p>👉 <span>grid-template-columns : </span>column1-size column2-size column3-size & so on</p>
+        <p>👉 <span>grid-template-rows : </span>row1-size row2-size row3-size & so on</p>
+        <p>👉 <span>grid-template-areas : </span></p>
+        <p>👉 <span>grid-column-gap : </span>value</p>
+        <p>👉 <span>grid-row-gap : </span>value</p>
+        <p>👉 <span>justify-content : </span>start | end | center | space-around | space-between | space-evenly</p>
+        <p>👉 <span>align-content : </span>start | end | center | space-around | space-between | space-evenly</p>
+        <p>👉 <span>justify-items : </span>start | end | center | stretch</p>
+        <p>👉 <span>align-items : </span>start | end | center | stretch</p>
+    </div>
+</body>
+</html>
