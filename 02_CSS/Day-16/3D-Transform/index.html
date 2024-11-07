@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS 3D Transform</title>
+</head>
+<body>
+    <!--* CSS 3D Transforms
+        ● 3D transforms are used to create 3D effects, such as 3D rotations, 3D scaling, and 3D translations.
+        ● 3D transforms modify elements along the X, Y, and Z axes, allowing for more complex transformations and perspective effects.
+    -->
+
+    <!--* 3D Transform Functions
+        👉  translateX():
+            ● The translateX() method moves the element along the X-axis (horizontal).
+            ● Syntax: transform: translateX(x);
+            ● Explanation: x moves the element horizontally.
+            ● Example: transform: translateX(50px); moves the element 50px to the right.
+
+
+        👉  translateY():
+            ● The translateY() method moves the element along the Y-axis (vertical).
+            ● Syntax: transform: translateY(y);
+            ● Explanation: y moves the element vertically.
+            ● Example: transform: translateY(50px); moves the element 50px down.
+
+
+        👉  translateZ():
+            ● The translateZ() method moves the element along the Z-axis (depth).
+            ● Syntax: transform: translateZ(z);
+            ● Explanation: z moves the element along the z-axis.
+            ● Example: transform: translateZ(50px); moves the element 50px forward.
+
+
+        👉 rotateX():
+            ● The rotateX() method rotates an element around the X-axis (horizontal).
+            ● Syntax: transform: rotateX(angle);
+            ● Rotates the element in the “up-down” direction.
+            ● Example: transform: rotateX(45deg); rotates the element by 45 degrees clockwise.
+
+
+        👉 rotateY():
+            ● The rotateY() method rotates an element around the Y-axis (vertical).
+            ● Syntax: transform: rotateY(angle);
+            ● Rotates the element in the “left-right” direction.
+            ● Example: transform: rotateY(45deg); rotates the element by 45 degrees clockwise.
+
+
+        👉 rotateZ():
+            ● The rotateZ() method rotates an element around the Z-axis (flat rotation).
+            ● Syntax: transform: rotateZ(angle);
+            ● Works like rotate() in 2D but applied in a 3D space.
+            ● Example: transform: rotateZ(45deg); rotates the element by 45 degrees clockwise.
+
+
+        👉 perspective():
+            ● The perspective property defines the distance between the viewer and the element, creating depth.
+            ● Syntax: perspective: distance;
+            ● Explanation: distance defines the distance between the viewer and the element.
+            ● Usage: Add perspective to the parent container.
+
+
+        👉 scaleX():
+            ● The scaleX() function increases or decreases the size of an element horizontally.
+            ● Syntax: transform: scaleX(x);
+            ● Explanation: x scales the width (horizontally).
+            ● Example: transform: scaleX(1.5); makes the element 1.5 times wider.
+
+        
+        👉 scaleY():
+            ● The scaleY() function increases or decreases the size of an element vertically.
+            ● Syntax: transform: scaleY(y);
+            ● Explanation: y scales the height (vertically).
+            ● Example: transform: scaleY(1.5); makes the element 1.5 times taller.
+
+
+        👉 scaleZ():
+            ● The scaleZ() function increases or decreases the size of an element along the Z-axis.
+            ● Syntax: transform: scaleZ(z);
+            ● Explanation: z scales the depth (depth).
+            ● Example: transform: scaleZ(1.5); makes the element 1.5 times deeper.
+    -->
+
+
+    <h1>CSS 3D-Transform</h1>
+
+    <div class="container container-one">
+        <div class="box translate-x">Translate-X <br> (200px)</div>
+        <div class="box translate-y">Translate-Y <br> (150px)</div>
+        <div class="box translate-z">Translate-Z <br> (100px)</div>
+        <div class="box rotate-x">Rotate-X <br> (180deg)</div>
+        <div class="box rotate-y">Rotate-Y <br> (180deg)</div>
+        <div class="box rotate-z">Rotate-Z <br> (180deg)</div>
+        <div class="box scale-x">Scale-X <br> (1.5)</div>
+        <div class="box scale-y">Scale-Y <br> (1.5)</div>
+        <div class="box scale-z">Scale-Z <br> (1.5)</div>
+    </div>
+</html>
