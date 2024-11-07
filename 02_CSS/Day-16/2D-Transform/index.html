@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS 2D Transform</title>
+</head>
+<body>
+    <!--* CSS 2D Transform
+        ● 2D transforms modify elements along the X and Y axes only (horizontal and vertical), giving the ability to move, rotate, scale, or skew (tilt) elements flat on the page.
+    -->
+
+    <!--* 2D Transform Functions
+        👉 translate(x, y):
+            ● The translate() function moves an element along the x and y axes from its initial position.
+            ● Syntax: transform: translate(x, y);
+            ● Explanation: x moves the element horizontally, and y moves it vertically.
+            ● Example: transform: translate(50px, 100px); moves the element 50px to the right and 100px down.
+
+
+        👉 rotate(angle):
+            ● The rotate() function rotates an element in either clockwise or anticlockwise direction.
+            ● Syntax: transform: rotate(angle);
+            ● Explanation: angle defines the angle of rotation in degrees. Positive values rotate clockwise, while negative values rotate counterclockwise.
+            ● Example: transform: rotate(45deg); rotates the element by 45 degrees clockwise.
+
+
+        👉 scale(x, y):
+            ● The scale() function increases or decreases the size of an element.
+            ● Syntax: transform: scale(x, y);
+            ● Explanation: x scales the width (horizontally), and y scales the height (vertically). If only one value is given, it scales both dimensions equally.
+            ● Example: transform: scale(1.5, 2); makes the element 1.5 times wider and twice as tall.
+
+
+        👉 skew(x, y):
+            ● The skew() function skews (tilts) an element along the x and y axes.
+            ● Syntax: transform: skew(x, y);
+            ● Explanation: x tilts the element along the horizontal axis, and y tilts the element along the vertical axis.
+            ● Example: transform: skew(30deg, 20deg); tilts the element 30 degrees along the X-axis and 20 degrees along the Y-axis.
+    -->
+
+
+    <h1>CSS 2D-Transform</h1>
+
+    <div class="container container-one">
+        <div class="box translate">Translate <br> (200px, 150px)</div>
+        <div class="box rotate">Rotate <br> (180deg)</div>
+        <div class="box scale">Scale <br> (1.5)</div>
+        <div class="box skew">Skew <br> (30deg, 20deg)</div>
+    </div>
+
+    <div class="container container-two">
+        <div class="box translate">Translate <br> (-100px, 150px)</div>
+        <div class="box rotate">Rotate <br> (270deg)</div>
+        <div class="box scale">Scale <br> (2)</div>
+        <div class="box skew">Skew <br> (40deg, -30deg)</div>
+    </div>
+
+    <div class="container container-three">
+        <div class="box translate">Translate <br> (-100px, -200px)</div>
+        <div class="box rotate">Rotate <br> (150deg)</div>
+        <div class="box scale">Scale <br> (1.5, 2)</div>
+        <div class="box skew">Skew <br> (-40deg, -20deg)</div>
+    </div>
+</body>
+</html>
