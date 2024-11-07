@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: tomato;
+    margin: 15px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    margin: 5px;
+}
+
+.container {
+    width: 550px;
+    padding: 20px;
+    margin: auto;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+img {
+    height: 50px;
+}
+
+.start, .end, .center, .space-between, .space-around, .space-evenly {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(2, 50px);
+    gap: 10px;
+
+    width: 500px;
+    height: 220px;
+    padding: 7px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.start {
+    align-content: start;
+}
+
+.end {
+    align-content: end;
+}
+
+.center {
+    align-content: center;
+}
+
+.space-between {
+    align-content: space-between;
+}
+
+.space-around {
+    align-content: space-around;
+}
+
+.space-evenly {
+    align-content: space-evenly;
+}
