@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", serif;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(22, 20, 20);
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: -4px 2px 56px #f9c05f;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mercury {
+    width: 20px;
+    height: 20px;
+    background-color: #a94c2b;
+    border-radius: 50%;
+    box-shadow: -4px 2px 56px #f9c05f;
+
+    position: absolute;
+    top: 42%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+
+    animation: mercury-animation 2s linear infinite;
+}
+
+@keyframes mercury-animation {
+    from {
+        transform: rotate(0deg) translateX(70px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(70px) rotate(-360deg);
+    }
+}
+
+p {
+    color: #fff;
+    position: absolute;
+    left: -62px;
+    top: -11px;
+}
+
+.mercury-outline, .venus-outline, .earth-outline, .mars-outline, .jupiter-outline, .saturn-outline, .uranus-outline, .neptune-outline {
+    border-radius: 50%;
+    border: 1px dotted #ddd9dd;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mercury-outline {
+    height: 140px;
+    width: 140px;
+}
+
+.venus {
+    width: 40px;
+    height: 40px;
+    background-image: url();
+    background-size: 100%;
+    background-color: #361d14;
+    border-radius: 50%;
+    box-shadow: -4px 2px 56px #c1aa81;
+
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+
+    animation: venus-animation 10s linear infinite;
+}
+
+@keyframes venus-animation {
+    from {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
+
+.venus-outline {
+    height: 200px;
+    width: 200px;
+}
+
+.earth {
+    width: 50px;
+    height: 50px;
+    background-color: #2855d6;
+    border-radius: 50%;
+    box-shadow: -4px 2px 56px #c1aa81;
+
+    position: absolute;
+    top: 44%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+
+    animation: earth-animation 20s linear infinite;
+}
+
+@keyframes earth-animation {
+    from {
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}
+
+.earth-outline {
+    height: 300px;
+    width: 300px;
+}
+
+
+.earth-circle {
+    height: 65px;
+    width: 65px;
+    border: 1px dotted #ddd9dd;
+
+    position: relative;
+    left: -8px;
+    top: -7px;
+    border-radius: 40px;
+}
+
+
+.earth-inner {
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+
+    animation: earth-inner-animation 3s linear infinite;
+}
+
+@keyframes earth-inner-animation {
+    from {
+        transform: rotate(0deg) translateX(33px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(33px) rotate(-360deg);
+    }    
+}
+
+.mars {
+    width: 30px;
+    height: 30px;
+    background-image: url();
+    background-size: 100%;
+    background-color: #361d14;
+    border-radius: 50%;
+    box-shadow: -4px 2px 56px #fea535;
+
+    position: absolute;
+    top: 46.5%;
+    left: 46.5%;
+    transform: translate(-50%, -50%);
+
+    animation: mars-animation 30s linear infinite;
+}
+
+@keyframes mars-animation {
+    from {
+        transform: rotate(0deg) translateX(190px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(190px) rotate(-360deg);
+    }
+}
+
+.mars-outline {
+    height: 380px;
+    width: 380px;
+}
+
+.jupiter {
+    width: 40px;
+    height: 40px;
+    background-image: url();
+    background-size: 100%;
+    background-color: #361d14;
+    border-radius: 50%;
+    box-shadow: -4px 2px 56px #cac2b9;
+
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+
+    animation: jupiter-animation 60s linear infinite;
+}
+
+@keyframes jupiter-animation {
+    from {
+        transform: rotate(0deg) translateX(235px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(235px) rotate(-360deg);
+    }
+}
+
+.jupiter-outline {
+    height: 460px;
+    width: 460px;
+}
+
+.saturn {
+    width: 50px;
+    height: 50px;
+    background-image: url();
+    background-size: 100%;
+    background-color: #361d14;
+    border-radius: 50%;
+    box-shadow: -4px 2px 56px #cac2b9;
+
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+
+    animation: saturn-animation 90s linear infinite;
+}
+
+@keyframes saturn-animation {
+    from {
+        transform: rotate(0deg) translateX(270px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(270px) rotate(-360deg);
+    }
+}
+
+.saturn-outline {
+    height: 535px;
+    width: 535px;
+}
+
+.uranus {
+    width: 30px;
+    height: 30px;
+    background-image: url();
+    background-size: 100%;
+    background-color: #361d14;
+    border-radius: 50%;
+    box-shadow: -4px 2px 56px #cac2b9;
+
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+
+    animation: uranus-animation 150s linear infinite;
+}
+
+@keyframes uranus-animation {
+    from {
+        transform: rotate(0deg) translateX(300px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(300px) rotate(-360deg);
+    }
+}
+
+.uranus-outline {
+    height: 600px;
+    width: 600px;
+}
+
+.neptune {
+    width: 30px;
+    height: 30px;
+    background-image: url();
+    background-size: 100%;
+    background-color: #361d14;
+    border-radius: 50%;
+    box-shadow: -4px 2px 56px #cac2b9;
+
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+
+    animation: neptune-animation 250s linear infinite;
+}
+
+@keyframes neptune-animation {
+    from {
+        transform: rotate(0deg) translateX(340px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(340px) rotate(-360deg);
+    }
+}
+
+.neptune-outline {
+    height: 665px;
+    width: 665px;
+}
