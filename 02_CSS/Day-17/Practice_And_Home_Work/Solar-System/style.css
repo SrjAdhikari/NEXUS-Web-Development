@@ -16,12 +16,34 @@ body {
     background-color: rgb(22, 20, 20);
 }
 
+
+/* Sun Style */
 .sun {
+    color: #000;
     width: 100px;
     height: 100px;
-    background-color: yellow;
+    background-color: rgb(230, 230, 34);
     border-radius: 50%;
     box-shadow: -4px 2px 56px #f9c05f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sun p {
+    color: tomato;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    left: 33px;
+    top: 35px;
+}
+
+/* Planets Style Start From Here */
+.mercury-outline, .venus-outline, .earth-outline, .mars-outline, .jupiter-outline, .saturn-outline, .uranus-outline, .neptune-outline {
+    border-radius: 50%;
+    border: 1px dotted #ddd9dd;
 
     position: absolute;
     top: 50%;
@@ -29,10 +51,19 @@ body {
     transform: translate(-50%, -50%);
 }
 
+p {
+    color: #fff;
+    position: absolute;
+    left: -62px;
+    top: -11px;
+}
+
+/* Mercury Style */
 .mercury {
     width: 20px;
     height: 20px;
-    background-color: #a94c2b;
+    background-image: url(../../images/mercury.jpg);
+    background-size: 100%;
     border-radius: 50%;
     box-shadow: -4px 2px 56px #f9c05f;
 
@@ -41,7 +72,7 @@ body {
     left: 43%;
     transform: translate(-50%, -50%);
 
-    animation: mercury-animation 2s linear infinite;
+    animation: mercury-animation 10s linear infinite;
 }
 
 @keyframes mercury-animation {
@@ -54,43 +85,26 @@ body {
     }
 }
 
-p {
-    color: #fff;
-    position: absolute;
-    left: -62px;
-    top: -11px;
-}
-
-.mercury-outline, .venus-outline, .earth-outline, .mars-outline, .jupiter-outline, .saturn-outline, .uranus-outline, .neptune-outline {
-    border-radius: 50%;
-    border: 1px dotted #ddd9dd;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .mercury-outline {
     height: 140px;
     width: 140px;
 }
 
+/* Venus Style */
 .venus {
-    width: 40px;
-    height: 40px;
-    background-image: url();
+    width: 30px;
+    height: 30px;
+    background-image: url(../../images/venus.jpg);
     background-size: 100%;
-    background-color: #361d14;
     border-radius: 50%;
-    box-shadow: -4px 2px 56px #c1aa81;
+    /* box-shadow: -4px 2px 56px #c1aa81; */
 
     position: absolute;
     top: 40%;
     left: 42%;
     transform: translate(-50%, -50%);
 
-    animation: venus-animation 10s linear infinite;
+    animation: venus-animation 15s linear infinite;
 }
 
 @keyframes venus-animation {
@@ -108,79 +122,81 @@ p {
     width: 200px;
 }
 
+/* Earth Style */
 .earth {
-    width: 50px;
-    height: 50px;
-    background-color: #2855d6;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../images/earth.jpg);
+    background-size: 100%;
     border-radius: 50%;
-    box-shadow: -4px 2px 56px #c1aa81;
+    /* box-shadow: -4px 2px 56px #c1aa81; */
 
     position: absolute;
     top: 44%;
     left: 43%;
     transform: translate(-50%, -50%);
 
-    animation: earth-animation 20s linear infinite;
+    animation: earth-animation 25s linear infinite;
 }
 
 @keyframes earth-animation {
     from {
-        transform: rotate(0deg) translateX(150px) rotate(0deg);
+        transform: rotate(0deg) translateX(135px) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+        transform: rotate(360deg) translateX(135px) rotate(-360deg);
     }
 }
 
 .earth-outline {
-    height: 300px;
-    width: 300px;
+    height: 280px;
+    width: 280px;
 }
 
 
 .earth-circle {
-    height: 65px;
-    width: 65px;
+    height: 50px;
+    width: 50px;
     border: 1px dotted #ddd9dd;
 
     position: relative;
-    left: -8px;
-    top: -7px;
+    left: -5px;
+    top: -5px;
     border-radius: 40px;
 }
 
 
 .earth-inner {
-    height: 10px;
-    width: 10px;
+    height: 7px;
+    width: 7px;
     background-color: #fff;
     border-radius: 50%;
 
     position: absolute;
-    left: 45%;
-    top: 45%;
+    left: 40%;
+    top: 40%;
     transform: translate(-50%, -50%);
 
-    animation: earth-inner-animation 3s linear infinite;
+    animation: earth-inner-animation 5s linear infinite;
 }
 
 @keyframes earth-inner-animation {
     from {
-        transform: rotate(0deg) translateX(33px) rotate(0deg);
+        transform: rotate(0deg) translateX(25px) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg) translateX(33px) rotate(-360deg);
+        transform: rotate(360deg) translateX(25px) rotate(-360deg);
     }    
 }
 
+/* Mars Style */
 .mars {
     width: 30px;
     height: 30px;
-    background-image: url();
+    background-image: url(../../images/mars.jpg);
     background-size: 100%;
-    background-color: #361d14;
     border-radius: 50%;
     box-shadow: -4px 2px 56px #fea535;
 
@@ -189,30 +205,30 @@ p {
     left: 46.5%;
     transform: translate(-50%, -50%);
 
-    animation: mars-animation 30s linear infinite;
+    animation: mars-animation 35s linear infinite;
 }
 
 @keyframes mars-animation {
     from {
-        transform: rotate(0deg) translateX(190px) rotate(0deg);
+        transform: rotate(0deg) translateX(175px) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg) translateX(190px) rotate(-360deg);
+        transform: rotate(360deg) translateX(175px) rotate(-360deg);
     }
 }
 
 .mars-outline {
-    height: 380px;
-    width: 380px;
+    height: 360px;
+    width: 360px;
 }
 
+/* Jupiter Style */
 .jupiter {
     width: 40px;
     height: 40px;
-    background-image: url();
+    background-image: url(../../images/jupiter.jpg);
     background-size: 100%;
-    background-color: #361d14;
     border-radius: 50%;
     box-shadow: -4px 2px 56px #cac2b9;
 
@@ -221,30 +237,30 @@ p {
     left: 45%;
     transform: translate(-50%, -50%);
 
-    animation: jupiter-animation 60s linear infinite;
+    animation: jupiter-animation 50s linear infinite;
 }
 
 @keyframes jupiter-animation {
     from {
-        transform: rotate(0deg) translateX(235px) rotate(0deg);
+        transform: rotate(0deg) translateX(220px) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg) translateX(235px) rotate(-360deg);
+        transform: rotate(360deg) translateX(220px) rotate(-360deg);
     }
 }
 
 .jupiter-outline {
-    height: 460px;
-    width: 460px;
+    height: 440px;
+    width: 440px;
 }
 
+/* Saturn Style */
 .saturn {
     width: 50px;
     height: 50px;
-    background-image: url();
+    background-image: url(../../images/saturn.jpg);
     background-size: 100%;
-    background-color: #361d14;
     border-radius: 50%;
     box-shadow: -4px 2px 56px #cac2b9;
 
@@ -253,30 +269,30 @@ p {
     left: 45%;
     transform: translate(-50%, -50%);
 
-    animation: saturn-animation 90s linear infinite;
+    animation: saturn-animation 70s linear infinite;
 }
 
 @keyframes saturn-animation {
     from {
-        transform: rotate(0deg) translateX(270px) rotate(0deg);
+        transform: rotate(0deg) translateX(260px) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg) translateX(270px) rotate(-360deg);
+        transform: rotate(360deg) translateX(260px) rotate(-360deg);
     }
 }
 
 .saturn-outline {
-    height: 535px;
-    width: 535px;
+    height: 520px;
+    width: 520px;
 }
 
+/* Uranus Style */
 .uranus {
     width: 30px;
     height: 30px;
-    background-image: url();
+    background-image: url(../../images/uranus.jpg);
     background-size: 100%;
-    background-color: #361d14;
     border-radius: 50%;
     box-shadow: -4px 2px 56px #cac2b9;
 
@@ -285,16 +301,16 @@ p {
     left: 47%;
     transform: translate(-50%, -50%);
 
-    animation: uranus-animation 150s linear infinite;
+    animation: uranus-animation 90s linear infinite;
 }
 
 @keyframes uranus-animation {
     from {
-        transform: rotate(0deg) translateX(300px) rotate(0deg);
+        transform: rotate(0deg) translateX(303px) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg) translateX(300px) rotate(-360deg);
+        transform: rotate(360deg) translateX(303px) rotate(-360deg);
     }
 }
 
@@ -303,12 +319,12 @@ p {
     width: 600px;
 }
 
+/* Neptune Style */
 .neptune {
     width: 30px;
     height: 30px;
-    background-image: url();
+    background-image: url(../../images/neptune.jpg);
     background-size: 100%;
-    background-color: #361d14;
     border-radius: 50%;
     box-shadow: -4px 2px 56px #cac2b9;
 
@@ -317,16 +333,16 @@ p {
     left: 47%;
     transform: translate(-50%, -50%);
 
-    animation: neptune-animation 250s linear infinite;
+    animation: neptune-animation 120s linear infinite;
 }
 
 @keyframes neptune-animation {
     from {
-        transform: rotate(0deg) translateX(340px) rotate(0deg);
+        transform: rotate(0deg) translateX(337px) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg) translateX(340px) rotate(-360deg);
+        transform: rotate(360deg) translateX(337px) rotate(-360deg);
     }
 }
 
