@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Animation</title>
+</head>
+<body>
+    <!--* CSS Animation:
+        ● CSS animations allow us to create moving effects by changing properties of elements over time.
+        ● We can animate elements by setting CSS properties like position, opacity, transition or transform.
+    -->
+
+    <!--* Basic Concept of CSS Animation:
+        ● CSS animations are defined in two main parts:
+            1. @keyframes Rule – Defines the steps of the animation.
+            2. Animation Properties – Applied to the element to control how the animation plays.
+    -->
+
+    <!--* The @keyframes Rule:
+        👉 The @keyframes rule specifies the animation’s behavior at certain points (keyframes) during the sequence.
+
+        👉 Syntax:
+            @keyframes animation-name {
+                from { }
+                to { }
+            }
+
+            @keyframes animation-name {
+                0% { /* starting state */ }
+                50% { /* middle state */ }
+                100% { /* ending state */ }
+            }
+    -->
+
+    <!--* CSS Animation Properties:
+        👉 animation-name: 
+            ● Specifies the name of the @keyframes you created.
+            ● Example: animation-name: slide;
+
+        👉 animation-duration: 
+            ● Specifies how long the animation takes (in seconds or milliseconds).
+            ● Example: animation-duration: 5s;
+
+        👉 animation-timing-function: 
+            ● Defines the speed curve of the animation.
+            ● Values: linear, ease, ease-in, ease-out, ease-in-out
+            ● Example: animation-timing-function: ease-in-out;
+
+        👉 animation-delay: 
+            ● Defines the amount of time to delay before the animation starts.
+            ● Example: animation-delay: 2s;
+
+        👉 animation-iteration-count: 
+            ● Specifies the number of times an animation repeats.
+            ● 1 means it plays once; infinite means it repeats indefinitely.
+            ● Example: animation-iteration-count: infinite;
+
+        👉 animation-direction: 
+            ● Defines whether the animation should be played forwards, backwards or in alternate cycles.
+            ● Values: 
+                1. normal : plays forward.
+                2. reverse : plays backward.
+                3. alternate : plays forward, then backward.
+                4. alternate-reverse : plays backward, then forward.
+            ● Example: animation-direction: alternate;
+
+        👉 animation-fill-mode: 
+            ● Specifies what happens to the final keyframe when the animation is finished.
+            ● Values: 
+                1. none : not apply any styles to the element.
+                2. forwards : apply the styles to the element at the end of the animation.
+                3. backwards : apply the styles to the element at the start of the animation.
+                4. both : apply the styles at the start and end of the animation.
+            ● Example: animation-fill-mode: forwards;
+
+        👉 Shorthand for Animation Properties:
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+    -->
+
+
+    <h1>CSS Animation Properties</h1>
+
+    <div class="container">
+        <p>👉 @keyframe rule</p>
+        <p>👉 animation-name</p>
+        <p>👉 animation-duration</p>
+        <p>👉 animation-delay</p>
+        <p>👉 animation-iteration-count</p>
+        <p>👉 animation-direction</p>
+        <p>👉 animation-timing-function</p>
+        <p>👉 animation-fill-mode</p>
+
+        <h2>Animation Shorthand Property</h2>
+        <p>👉 animation : name duration timing-function delay iteration-count direction fill-mode;</p>
+    </div>
+</body>
+</html>
