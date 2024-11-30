@@ -124,4 +124,5 @@ console.log(Math.trunc(-23.3));     // -23 (removes decimal)
 console.log(Math.trunc(23.9));      // 23 (removes decimal)
 console.log(Math.trunc("23.9"));    // 23 (converts the string to a number and removes decimal)
 
+
 //* ****************************************************
