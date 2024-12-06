@@ -88,16 +88,4 @@ console.log(deepCopy.address.city);                 // Output -> Kathmandu
 // Modifying "deepCopy.age" and "deepCopy.address.city" does not affect the "original.age" and "original.address.city", 
 // because they are completely separate. Any changes to "deepCopy" will not affect "original".
 
-
-//* *****************************************************
-
-//* Key Differences Between Shallow Copy and Deep Copy :
-/*
-    ¦==============================================================================================================================================¦ 
-    ¦          Aspect        ¦                  Shallow Copy                    ¦                              Deep Copy                           ¦
-    ¦==============================================================================================================================================¦ 
-    ¦   Copy Type	         ¦   Only the top-level properties are copied.	    ¦    All properties (including nested objects/arrays) are copied.  ¦
-    ¦   Nested Objects       ¦   Nested objects are copied by reference.	    ¦    Nested objects are fully copied, no reference sharing.        ¦
-    ¦   Modification impact  ¦   Changes in nested objects affect both copies.	¦    Changes to nested objects do not affect the original.         ¦
-    ¦----------------------------------------------------------------------------------------------------------------------------------------------¦
-*/
+//* ****************************************************
