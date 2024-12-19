@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Select DOM Element By QuerySelector</title>
+	</head>
+	<body>
+		<h1 id="heading">JavaScript DOM</h1>
+		<p id="paragraph">
+			Learning how to select DOM element by queryselectorAll in
+			JavaScript.
+		</p>
+
+		<div id="container">
+			<p id="paragraph">This is second paragraph.</p>
+			<p id="paragraph">This is third paragraph.</p>
+		</div>
+
+		<div>
+			<span>This is first span.</span>
+			<span>This is second span.</span>
+		</div>
+
+        <ul class="fruit-list">
+			<li class="fruit-item">Apple</li>
+			<li class="fruit-item">Banana</li>
+			<li class="fruit-item">Orange</li>
+			<li class="fruit-item">Grapes</li>
+			<li class="fruit-item">Pineapple</li>
+			<li class="fruit-item">Watermelon</li>
+		</ul>
+	</body>
+
+	<!-- Script Section to select DOM element by its query selector -->
+	<script>
+		// Selecting Paragraph element by querySelectorAll using id.
+		const para = document.querySelectorAll("#paragraph");               // Selects all paragraph that matches the CSS selector (#paragraph)
+		console.log(para);
+
+
+		// Selecting all the paragraph element inside the container.
+		const container = document.getElementById("container");
+
+        // Selects all paragraph that matches the CSS selector (#paragraph) inside the container
+		const para2 = container.querySelectorAll("#paragraph");
+		console.log(para2);
+
+
+		// Selecting Div element by querySelectorAll
+		const div = document.querySelectorAll("div");                       // Selects all div that matchs the CSS selector (div)
+		console.log(div);
+
+
+		// Selecting Paragraph element by querySelectorAll using tag name.
+		const paragraph = document.querySelectorAll("p");                   // Selects all paragraph that matches the CSS selector (p)
+		console.log(paragraph);
+
+
+		// Selecting span element by querySelectorAll
+		const span = document.querySelectorAll("span");                     // Selects all span that matches the CSS selector (span)
+		console.log(span);
+
+
+        // Selecting li element by querySelectorAll
+        const li = document.querySelectorAll(".fruit-item");                // Selects all li that matches the CSS selector (.fruit-item)
+        console.log(li);
+
+
+        // Iterating over all the list elements selected by querySelectorAll.
+        // 1. Using for loop
+        for(let i = 0; i < li.length; i++) {
+            console.log(li[i].textContent);
+        }
+
+        // Output:
+        // Apple
+        // Banana
+        // Orange
+        // Grapes
+        // Pineapple
+        // Watermelon
+
+
+        // 2. Using forEach loop
+        li.forEach( item => {
+            console.log(item.textContent)
+        });
+
+
+        // 3. Using for..of loop
+        for(let listitem of li) {
+            console.log(listitem.textContent);
+        }
+	</script>
+</html>
