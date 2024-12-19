@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Select DOM Element By QuerySelector</title>
+	</head>
+	<body>
+		<h1 id="heading">JavaScript DOM</h1>
+		<p id="paragraph">
+			Learning how to select DOM element by its query selector in
+			JavaScript.
+		</p>
+
+		<div>
+			<p id="paragraph">This is second paragraph.</p>
+			<p id="paragraph">This is third paragraph.</p>
+		</div>
+
+		<div>
+			<span>This is first span.</span>
+			<span>This is second span.</span>
+		</div>
+
+        <ul class="list">
+			<li class="item1">Apple</li>
+			<li class="item2">Banana</li>
+			<li class="item3">Orange</li>
+		</ul>
+	</body>
+
+
+	<!-- Script Section to select DOM element by its query selector -->
+	<script>
+		// Selecting DOM element by query selector
+		const para = document.querySelector("#paragraph");          // Selects the first paragraph that matches the CSS selector (#paragraph)
+		console.log(para);
+		console.log(para.textContent);
+
+
+		// Selecting DOM element by query selector
+		const div = document.querySelector("div");                  // Selects the first div that matches the CSS selector (div)
+		console.log(div);
+		console.log(div.textContent);                               // This is second paragraph. This is third paragraph.
+
+
+        // Selecting DOM element by query selector
+        const fruitsList = document.querySelector(".list");         // Selects the first list that matches the CSS selector (.list)
+        console.log(fruitsList);
+        console.log(fruitsList.textContent);                        // Apple Banana Orange
+	</script>
+</html>
