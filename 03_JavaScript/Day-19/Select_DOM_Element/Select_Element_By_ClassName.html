@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select DOM Element By ClassName</title>
+</head>
+<body>
+    <h1 id="heading">JavaScript DOM</h1>
+
+    <p class="paragraph">
+        Learning how to select DOM element by its class name in JavaScript.
+    </p>
+
+    <p class="paragraph">This is second paragraph.</p>
+    <p class="paragraph">This is third paragraph.</p>
+
+    <div id="container">
+        <p class="paragraph">First paragraph inside the container.</p>
+        <p class="paragraph">Second paragraph inside the container.</p>
+    </div>
+
+    <ul>
+        <li class="list-item">First Item</li>
+        <li class="list-item">Second Item</li>
+        <li class="list-item">Third Item</li>
+        <li class="list-item">Fourth Item</li>
+        <li class="list-item">Fifth Item</li>
+    </ul>
+
+
+    <!-- Script Section to select DOM element by its classname -->
+    <script>
+        // Selecting all the paragraph elements present in HTML document.
+        const paragraphs = document.getElementsByClassName("paragraph");
+        console.log(paragraphs);
+
+
+        // Selecting the only paragraph element inside the container.
+        const container = document.getElementById("container");
+        const containerParagraph = container.getElementsByClassName("paragraph");
+        console.log(containerParagraph);
+
+
+        // Selecting all the list items present in HTML document.
+        const listItems = document.getElementsByClassName("list-item");
+        console.log(listItems);
+
+
+        // Printing the text content of all the list items.
+        console.log(listItems[0].textContent);                  // Output -> First Item
+        console.log(listItems[1].textContent);                  // Output -> Second Item
+        console.log(listItems[2].textContent);                  // Output -> Third Item
+        console.log(listItems[3].textContent);                  // Output -> Fourth Item
+        console.log(listItems[4].textContent);                  // Output -> Fifth Item
+
+
+        // Iterating over all the list elements selected by className.
+        // 1. Using for loop
+        for(let i = 0; i < listItems.length; i++) {
+            console.log(listItems[i].textContent);
+        }
+
+        // Output:
+        // First Item
+        // Second Item
+        // Third Item
+        // Fourth Item
+        // Fifth Item
+
+
+        // 2. Using for..of loop
+        for(let item of listItems) {
+            console.log(item.textContent);
+        }
+
+        // Output:
+        // First Item
+        // Second Item
+        // Third Item
+        // Fourth Item
+        // Fifth Item
+    </script>
+</body>
+</html>
