@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select DOM Element By Id</title>
+</head>
+<body>
+    <div class="container" id="main-container">
+        <h1 id="heading">JavaScript DOM</h1>
+        <p id="paragraph">This is a paragraph.</p>
+    </div>
+
+
+    <!-- Script Section to select DOM element by its id -->
+    <script>
+        // Selecting DOM Elements By Id
+        const div = document.getElementById("main-container");
+        const heading = document.getElementById("heading");
+        const paragraph = document.getElementById("paragraph");
+
+
+        // Printing the element selected by id
+        console.log(div);
+        console.log(heading);                           // Output -> <h1 id="heading">Hello World</h1>
+        console.log(paragraph);                         // Output -> <p id="paragraph">This is a paragraph.</p>
+    </script>
+</body>
+</html>
