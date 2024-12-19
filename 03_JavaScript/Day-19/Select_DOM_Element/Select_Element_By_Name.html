@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Select DOM Element By Name</title>
+	</head>
+	<body>
+		<h1 id="heading">JavaScript DOM</h1>
+		<p id="paragraph">
+			Learning how to select DOM element by its name attribute in
+			JavaScript.
+		</p>
+
+		<form>
+			<!-- Radio buttons with the name 'lang' -->
+			<input type="radio" name="lang" value="English" id="english" /> English
+			<input type="radio" name="lang" value="Spanish" id="spanish" /> Spanish
+			<input type="radio" name="lang" value="French" id="french" /> French
+			<input type="radio" name="lang" value="Japanese" id="japanese" /> Japanese
+			<input type="radio" name="lang" value="Nepali" id="nepali" /> Nepali
+		</form>
+
+
+		<!-- Script Section to select DOM element by its name -->
+		<script>
+			// Selecting DOM element by its name
+			const languages = document.getElementsByName("lang");
+			console.log(languages);
+
+
+			// Printing the value of each radio button
+			console.log(languages[0].value);                            // Output -> English
+			console.log(languages[1].value);                            // Output -> Spanish
+			console.log(languages[2].value);                            // Output -> French
+			console.log(languages[3].value);                            // Output -> Japanese
+			console.log(languages[4].value);                            // Output -> Nepali
+
+
+            // Iterating over all the radio buttons selected by name
+            // 1. Using for loop
+            for(let i = 0; i < languages.length; i++) {
+                console.log(languages[i].value);
+            }
+
+            // Output:
+            // English
+            // Spanish
+            // French
+            // Japanese
+            // Nepali
+
+
+            // 2. Using forEach loop
+            languages.forEach( language => console.log(language.value));
+
+            // Output:
+            // English
+            // Spanish
+            // French
+            // Japanese
+            // Nepali
+
+
+            // 3. Using for of loop
+            for(const language of languages) {
+                console.log(language.value);
+            }
+
+            // Output:
+            // English
+            // Spanish
+            // French
+            // Japanese
+            // Nepali
+		</script>
+	</body>
+</html>
