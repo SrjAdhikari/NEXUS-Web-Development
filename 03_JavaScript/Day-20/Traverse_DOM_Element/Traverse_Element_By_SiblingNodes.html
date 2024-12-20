@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Traverse DOM Element By Sibling Nodes</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="heading">JavaScript DOM</h1>
+			<ul>
+				<li class="list-item1">First Item</li>
+				<li class="list-item2">Second Item</li>
+				<li class="list-item3">Third Item</li>
+				<li class="list-item4">Fourth Item</li>
+				<li class="list-item5">Fifth Item</li>
+			</ul>
+			<p>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, a?
+			</p>
+		</div>
+
+
+		<!-- Script Section to traverse DOM element by parentNode -->
+		<script>
+			// Selecting ul tag
+			const unorderedList = document.querySelector("ul");
+
+			console.log(unorderedList.previousSibling); 
+            // Output: #text => This is the previous sibling, likely a text node (whitespace or line break)
+
+			console.log(unorderedList.nextSibling); 
+            // Output: #text => This is the next sibling, likely a text node (whitespace or line break)
+
+
+			console.log(unorderedList.previousElementSibling); 
+            // Output: <h1 id="heading">JavaScript DOM</h1> => previousElementSibling
+
+			console.log(unorderedList.nextElementSibling); 
+            // Output: <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, a?</p> => nextElementSibling
+
+
+			// Select list item
+			const listItem = document.querySelector(".list-item2");
+
+			console.log(listItem.previousSibling); 
+            // Output: #text => This is the previous sibling, likely a text node (whitespace or line break)
+
+			console.log(listItem.nextSibling); 
+            // Output: #text => This is the next sibling, likely a text node (whitespace or line break)
+
+			console.log(listItem.previousElementSibling); 
+            // Output: <li class="list-item1">First Item</li> => previousElementSibling
+
+			console.log(listItem.nextElementSibling); 
+            // Output: <li class="list-item3">Third Item</li> => nextElementSibling
+		</script>
+	</body>
+</html>
