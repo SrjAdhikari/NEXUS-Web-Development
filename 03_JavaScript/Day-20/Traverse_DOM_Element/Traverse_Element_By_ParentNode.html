@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Traverse DOM Element By ParentNode</title>
+	</head>
+	<body>
+		<h1 id="heading">JavaScript DOM</h1>
+		<div id="container">
+			<p id="paragraph">
+				Learning how to traverse DOM element by parentNode in JavaScript.
+			</p>
+		</div>
+
+
+		<!-- Script Section to traverse DOM element by parentNode -->
+		<script>
+			// Selecting paragraph tag by its id
+			const paragraph = document.querySelector("#paragraph");
+			console.log(paragraph.parentNode);              // Output -> <div id="container">
+            console.log(paragraph.parentElement);           // Output -> <div id="container">
+
+
+			// Selecting div element by its id
+			const div = document.querySelector("#container");
+			console.log(div.parentNode);                    // Output -> <body>
+            console.log(div.parentElement);                 // Output -> <body>
+
+
+			// Selecting heading tag by its id
+			const heading = document.querySelector("#heading");
+			console.log(heading.parentNode);                // Output -> <body>
+            console.log(heading.parentElement);             // Output -> <body>
+
+
+			// Selecting body tag
+			const body = document.querySelector("body");
+			console.log(body.parentNode);                   // Output -> <html>
+            console.log(body.parentElement);                // Output -> <html>
+		</script>
+	</body>
+</html>
