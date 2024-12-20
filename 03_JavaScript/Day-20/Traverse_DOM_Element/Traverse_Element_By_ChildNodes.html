@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Traverse DOM Element By ParentNode</title>
+	</head>
+	<body>
+		<h1 id="heading">JavaScript DOM</h1>
+
+		<ul>
+			<!-- Comment -->
+			<li class="list-items">First Item</li>
+			<li class="list-items">Second Item</li>
+			<li class="list-items">Third Item</li>
+			<li class="list-items">Fourth Item</li>
+			<li class="list-items">Fifth Item</li>
+			<!-- Comment -->
+		</ul>
+
+		<!-- Script Section to traverse DOM element by parentNode -->
+		<script>
+			// Selecting ul tag
+			const unorderedList = document.querySelector("ul");
+
+			console.log(unorderedList.childNodes);                      
+            // Output: NodeList(15) of all nodes inside the container (including text, comment nodes)
+
+            console.log(unorderedList.children);                        
+            // Output: HTMLCollection(5) of all HTML elements inside the container (ignoring text, comment nodes)
+
+
+			console.log(unorderedList.firstChild);                      
+            // Output: #text (Comment node, because it's the first node inside the container. Including text, comment nodes)
+
+			console.log(unorderedList.firstElementChild);               
+            // Output: <li class="list-items">First Item</li> (the first HTML element, ignoring text, comment nodes)
+
+
+			console.log(unorderedList.lastChild);                       
+            // Output: #text (Comment node, because it's the last node inside the container. Including text, comment nodes)
+
+			console.log(unorderedList.lastElementChild);                
+            // Output: <li class="list-items">Fifth Item</li> (the last HTML element, ignoring text, comment nodes)
+
+
+			// Selecting body
+			const body = document.querySelector("body");
+			console.log(body.firstElementChild);                        // Output: <h1 id="heading">JavaScript DOM</h1>
+			console.log(body.lastElementChild);                         // script tag
+		</script>
+	</body>
+</html>
