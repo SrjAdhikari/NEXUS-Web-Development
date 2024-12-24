@@ -172,3 +172,4 @@
 //* 3. innerText
     // Retrieves or modifies the visible text.
     // Excludes text from hidden elements (e.g., elements styled with display: none).
+    // It does not include HTML tags.
