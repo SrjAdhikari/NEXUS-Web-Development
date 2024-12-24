@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulate CSS Classes Of Element</title>
+</head>
+<body>
+    <div id="box">
+        <p style="font-size: 3rem;">Manipulate CSS Classes Of DOM Element</p>
+    </div>
+
+    <div id="container" class="box highlight shadow"></div>
+
+    <div id="root" class="section"></div>
+
+    <div id="replace" class="box old-class"></div>
+
+
+    <!-- Script Section to manipulate CSS classes of DOM element -->
+    <script>
+        // Select the box "div" element
+        const div = document.querySelector("#box");
+
+        // Select the "p" element
+        const p = document.querySelector("p");
+
+
+        //******************* Add Class To Element *******************
+        // Add a class to the "div" element
+        div.classList.add("container");
+
+        // Add a class to the "p" element
+        p.classList.add("paragraph");
+
+        // Add multiple classes to the "div" element
+        div.classList.add("box", "box-1");
+
+        // Print the class list of the "div" and "p" element
+        console.log(div.classList.value);                           // container box box-1
+        console.log(p.classList.value);                             // paragraph
+
+
+        //******************* Remove Class From Element *******************
+        // Get the container "div" element
+        const container = document.querySelector("#container");
+
+        // Remove a class from the "div" element
+        container.classList.remove("highlight");
+
+        // Remove multiple classes from the "div" element
+        container.classList.remove("box", "shadow");
+
+        // Print the class list of the "div" element
+        console.log(container.classList.value);                     // "" (All classes are removed)
+
+
+        //******************* Toggle Class From Element *******************
+        // Get the root "div" element
+        const root = document.querySelector("#root");
+
+        // Toggling class (adds 'show' because it's not present)
+        root.classList.toggle("show");
+        console.log(root.classList.value);                          // section show
+
+        // Toggling class again (removes 'show' because it's present)
+        root.classList.toggle("show");
+        console.log(root.classList.value);                          // section
+
+
+        //******************* Check If Element Has CSS Class *******************
+        // Check if the container "div" element has the "box" class
+        console.log(container.classList.contains("box"));            // false
+
+        // Check if the box "div" element has the "box" class
+        console.log(div.classList.contains("box"));                 // true
+
+        // Check if the root "div" element has the "box" class
+        console.log(root.classList.contains("box"));                // false
+
+
+        //******************* Replace CSS Class *******************
+        // Get the replace "div" element
+        const replace = document.querySelector("#replace");
+
+        // Class list before replacement
+        console.log(replace.classList.value);                        // box old-class
+
+
+        // Replace the "old-class" class with the "new-class" class
+        replace.classList.replace("old-class", "new-class");
+
+        // Class list after replacement
+        console.log(replace.classList.value);                        // box new-class
+    </script>
+</body>
+</html>
