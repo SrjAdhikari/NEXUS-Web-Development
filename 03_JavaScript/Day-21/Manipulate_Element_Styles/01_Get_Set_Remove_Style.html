@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulate Element Styles</title>
+</head>
+<body>
+    <div id="box">
+        <p>Manipulate <br> Element <br> Styles</p>
+    </div>
+
+
+    <!-- Script Section to manipulate DOM element styles -->
+    <script>
+        // Select the "div" element
+        const div = document.querySelector('#box');
+
+        // Select the "p" element
+        const p = document.querySelector('p');
+
+
+        //******************* Set Element Style *******************
+        // Style the "div" element
+        div.style.display = "flex";
+        div.style.justifyContent = "center";
+        div.style.alignItems = "center";
+
+        div.style.height = "100vh";
+        div.style.backgroundColor = "#000";
+
+
+        // Style the "p" element
+        p.style.fontSize = "2rem";
+        p.style.fontWeight = "bold";
+        p.style.height  = "250px";
+        p.style.width  = "250px";
+        p.style.textAlign = "center";
+        p.style.backgroundColor = "#1098ad";
+        p.style.border  = "5px solid #f00";
+        p.style.borderRadius = "10px";
+
+        p.style.display = "flex";
+        p.style.justifyContent = "center";
+        p.style.alignItems = "center";
+
+
+        //******************* Get Element Style *******************
+        // Get the style of the "div" element    
+        console.log(div.style.backgroundColor);                     // rgb(0, 0, 0)
+        console.log(div.style.display);                             // flex
+        console.log(div.style.justifyContent);                      // center
+        console.log(div.style.height);                              // 100vh
+
+
+        // Get the style of the "p" element
+        console.log(p.style.fontSize);                              // 2rem
+        console.log(p.style.fontWeight);                            // bold
+        console.log(p.style.height);                                // 250px
+        console.log(p.style.border);                                // 5px solid rgb(255, 0, 0)
+
+
+        //******************* Remove Element Style *******************
+        // Remove the style from the "div" element
+        div.style.removeProperty("background-color");
+
+        // Remove the style from the "p" element
+        p.style.removeProperty("font-weight");
+        p.style.removeProperty("border-radius");
+        p.style.removeProperty("background-color");
+    </script>
+</body>
+</html>
