@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupulate DOM Element</title>
+</head>
+<body>
+    <h1>Topics covered in Day 21</h1>
+    <ul id="root">
+        <li>Create Element</li>
+        <li>Create Node</li>
+        <li>Create Attribute</li>
+        <li>Append Child</li>
+        <li>Append</li>
+    </ul>
+
+
+    <!-- Script Section to manipulate DOM element -->
+    <script>
+        // Get the parent element
+        const parent = document.getElementById('root');
+
+        //************ Create an List Item And Append It To Parent ************
+        // Create an new element
+        const element = document.createElement('li');
+
+        // Set the content of the new element
+        element.innerHTML = "Prepend";
+
+        // Append the new element to the end of the parent.
+        parent.append(element);
+
+
+        //************ Create an Text Node And Append It To Parent ************
+        // Create an new text element
+        const textNode = document.createTextNode("Replace Child");
+
+        // Append the new text element to the end of the parent. 
+        parent.append(textNode);
+
+
+        //************ Create an Attribute And Append It To Parent ************
+        // Create an new attribute
+        const attribute = document.createAttribute("class");
+
+        // Set the value of the new attribute
+        attribute.value = "list";
+
+        // Append the new attribute to the element
+        parent.setAttributeNode(attribute);
+    </script>
+</body>
+</html>
