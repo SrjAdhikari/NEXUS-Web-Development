@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupulate DOM Element</title>
+</head>
+<body>
+    <h1>Navbar List</h1>
+    <ul id="menu">
+        <li>Homepage</li>
+        <li>Services</li>   
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+
+
+    <!-- Script Section to manipulate DOM element -->
+    <script>
+        // Get the parent element
+        const parent = document.getElementById("menu");
+
+        // Get the content of the parent element before manipulation
+        console.log(parent.textContent);                                // Homepage Services About Contact
+
+
+        //****************** Replace First Child ******************
+        // Create a new list item
+        const item1 = document.createElement("li");
+
+        // Set the content of the new list item
+        item1.innerHTML = "Home";
+
+        // Replace the first child of the 'menu' element with the newly created list item
+        parent.replaceChild(item1, parent.children[0]);
+        parent.replaceChild(item1, parent.firstElementChild);           // Alternate of above line (line: 35)
+
+
+        //****************** Replace Third Child ******************
+        // Create a new list item
+        const item2 = document.createElement("li");
+
+        // Set the content of the new list item
+        item2.innerHTML = "About-Us"
+
+        // Replace the third child of the 'menu' element with the newly created list item
+        parent.replaceChild(item2, parent.children[2]);
+
+
+        // Get the content of the parent element after manipulation
+        console.log(parent.textContent);                                // Home Services About-Us Contact
+    </script>
+</body>
+</html>

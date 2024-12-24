@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupulate DOM Element</title>
+</head>
+<body>
+    <h1>Navbar List</h1>
+    <ul id="menu">
+        <li>About</li>
+        <li>Contact</li>
+        <li>Services</li>
+    </ul>
+
+    <h2>Fruits List</h2>
+    <ul id="fruits"></ul>
+
+
+    <!-- Script Section to manipulate DOM element -->
+    <script>
+        // Get the parent element
+        const parent = document.getElementById("menu");
+
+
+        //************ Apppend new element to parent using appendChild() ************
+        // Create an new element
+        const element = document.createElement("li");
+
+        // Set the content of the new element
+        element.innerHTML = "Blog";
+
+        // Append the new element to the end of the parent.
+        parent.appendChild(element);
+
+
+        //************ Apppend new element to parent using append() ************
+        // Create two new element
+        const element1 = document.createElement("li");
+        const element2 = document.createElement("li");
+
+        // Set the content of the new element
+        element1.innerHTML = "Account";
+        element2.innerHTML = "Profile";
+
+        // Append the new element to the end of the parent.
+        parent.append(element1, element2);
+
+
+        //************ Apppend new element to parent using prepend() ************
+        // Create an new element
+        const firstElement = document.createElement("li");
+
+        // Set the content of the new element
+        firstElement.innerHTML = "Home";
+
+        // Append the new element to the end of the parent.
+        parent.prepend(firstElement);
+
+
+        //************ Apppend new element to parent using function() ************
+        // Get the parent element
+        const fruit_menu = document.getElementById("fruits");
+
+        function attach(item) {
+            // Create an new element
+            const element = document.createElement("li");
+
+            // Set the content of the new element
+            element.innerHTML = item;
+
+            // Append the new element to the end of the parent.
+            fruit_menu.append(element);
+        }
+
+        attach("Apple");
+        attach("Banana");    
+        attach("Orange");
+        attach("Mango");
+        attach("Kiwi");
+    </script>
+</body>
+</html>

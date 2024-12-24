@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulate DOM Element</title>
+</head>
+<body>
+    <div id="container">
+        <p>This is a first paragraph</p>
+        <p>This is a second paragraph</p>
+        <p>This is a third paragraph</p>
+    </div>
+
+    <div id="root">
+        <h2 id="heading">Hello Coder Army</h2>
+        <p id="paragraph">This is a example paragraph</p>
+        <span>This is a example span</span>
+    </div>
+
+
+    <!-- Script Section to manipulate DOM element -->
+    <script>
+        //****************** Remove First Child Using removeChild() Method ******************
+        // Get the parent div elemenet
+        const div = document.getElementById("container");
+
+        // Get the content of the div element before manipulation
+        console.log(div.textContent);               // This is a first paragraph, This is a second paragraph, This is a third paragraph
+
+        // Remove the second child of the 'container' element
+        div.removeChild(div.children[1]);
+
+        // Get the content of the div element after manipulation
+        console.log(div.textContent);               // This is a first paragraph, This is a third paragraph
+        console.log(div.children[1].textContent);   // This is a third paragraph (Now third paragraph is the second child of the 'container')
+
+
+        //****************** Remove Element Using remove() Method ******************
+        // Get the parent div elemenet
+        const root = document.getElementById("root");
+
+        // Get the content of the div element before manipulation
+        console.log(root.textContent);               // Hello Coder Army, This is a example paragraph, This is a example span
+
+        // Get the element to be removed
+        const element = document.getElementById("heading");
+
+        // Get the content of the element
+        console.log(element.innerHTML);             // Hello Coder Army
+
+        // Remove the element
+        element.remove();
+
+
+        // Get the content of the parent element after manipulation
+        console.log(root.textContent);                                // This is a example paragraph, This is a example span
+    </script>
+</body>
+</html>

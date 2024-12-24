@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupulate DOM Element</title>
+</head>
+<body>
+    <h1>InnerHTML And TextContent</h1>
+
+    <ul id="color-menu">
+        <li>Black</li>
+        <li>White</li>
+        <li>Green</li>
+        <li>Blue</li>
+        <li>Red</li>
+    </ul>
+
+    <ul id="weekday">
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+    </ul>
+
+    <!-- Script Section to manipulate DOM element -->
+    <script>
+        //************ Manipulate InnerHTML Of Color Menu ************
+        // Get the parent element
+        const parent = document.getElementById("color-menu");
+
+
+        // Get the content and children of the parent element
+        console.log(parent.children);               // HTMLCollection [li#black, li#white, li#green, li#blue, li#red]
+        console.log(parent.innerHTML);              // <li>Black</li> <li>White</li> <li>Green</li> <li>Blue</li> <li>Red</li>
+        console.log(parent.textContent);            // Black White Green Blue Red
+
+
+        // Manipulate the content of the parent element by adding a new element
+        parent.innerHTML += "<li>Yellow</li>";
+        console.log(parent.innerHTML);              // <li>Black</li> <li>White</li> <li>Green</li> <li>Blue</li> <li>Red</li> <li>Yellow</li>
+        console.log(parent.textContent);            // Black White Green Blue Red Yellow
+
+
+        // Manipulate the content of the parent element by replacing the existing element
+        parent.innerHTML = "<li>Orange</li>";
+        console.log(parent.innerHTML);              // <li>Orange</li> (Now Orange is the only element in the parent element)
+        console.log(parent.textContent);            // Orange
+
+
+        //************ Manipulate TextContent Of Weekday Menu ************
+        // Get the parent element
+        const parent1 = document.getElementById("weekday");
+
+        // Get the content of the parent element
+        console.log(parent1.textContent);           // Sunday Monday Tuesday Wednesday Thursday
+        console.log(parent1.innerHTML);             // <li>Sunday</li> <li>Monday</li> <li>Tuesday</li> <li>Wednesday</li> <li>Thursday</li>
+
+        // Get the first child element
+        const firstChild = parent1.children[0];
+
+
+        // Get the content of the first child element
+        console.log(firstChild.textContent);        // Sunday
+        console.log(firstChild.innerHTML);          // Sunday
+
+
+        // Manipulate the content of the first child element
+        firstChild.textContent = "First day of the Week is Sunday";
+
+        console.log(firstChild.textContent);        // First day of the Week is Sunday
+
+
+        // Get the content of the parent after manuplate the first child element
+        console.log(parent1.textContent);           // First day of the Week is Sunday Monday Tuesday Wednesday Thursday
+        console.log(parent1.innerHTML);             // <li>First day of the Week is Sunday</li> <li>Monday</li> <li>Tuesday</li> <li>Wednesday</li> <li>Thursday</li>
+    </script>
+</body>
+</html>
