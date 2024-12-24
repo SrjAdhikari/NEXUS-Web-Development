@@ -157,3 +157,4 @@
 //* 5. Replace CSS Class
     // Syntax: element.classList.replace("oldClassName", "newClassName");
     // Description: Replaces the old class name with the new class name.
+    // Example: element.classList.replace("old-class", "new-class");
