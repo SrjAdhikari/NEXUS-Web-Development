@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element Attributes</title>
+</head>
+<body>
+    <div id="product-container" data-id="101" data-name="Laptop" data-price="1500">
+        Laptop
+    </div>
+    <br>
+    <button>Buy Now</button>
+
+
+    <!-- Script Section to working with DOM element attributes -->
+    <script>
+        // Get the "div" element
+        div = document.getElementById("product-container");
+
+        // Get the button element
+        const button = document.querySelector("button");
+
+
+        //****************** Get Attribute ******************
+        // Get the value of the all attributes of the "div" element
+        console.log(div.getAttribute("data-id"));                           // 101
+        console.log(div.getAttribute("data-name"));                         // Laptop
+        console.log(div.getAttribute("data-price"));                        // 1500
+        console.log(div.getAttribute("id"));                                // product-container
+
+        console.log(div);
+        // <div id="product-container" data-id="101" data-name="Laptop" data-price="1500"> Laptop </div>
+
+
+        //****************** Set Attribute ******************
+        // Set the different attributes of the "button" element
+        button.setAttribute("id", "buy-button");
+        button.setAttribute("class", "btn");
+        button.setAttribute("disabled", "true");
+        button.setAttribute("title", "Buy Now");
+
+        console.log(button);
+        // <button id="buy-button" class="btn" disabled="true" title="Buy Now"></button>
+
+
+        //****************** Has Attribute ******************
+        // Check if the "div" and "button" element has the specified attribute
+        console.log(div.hasAttribute("id"));                               // true
+        console.log(div.hasAttribute("class"));                            // false
+        console.log(div.hasAttribute("title"));                            // false
+        console.log(div.hasAttribute("data-id"));                          // true
+
+        console.log(button.hasAttribute("id"));                            // true
+        console.log(button.hasAttribute("title"));                         // true
+        console.log(button.hasAttribute("data-name"));                     // false
+        console.log(button.hasAttribute("class"));                         // true
+
+
+        //****************** Remove Attribute ******************
+        // Remove the "disabled" attribute from the "button" element
+        button.removeAttribute("disabled");
+
+        // Remove the "data-name" attribute from the "div" element
+        div.removeAttribute("data-name");
+
+        
+        // Button element after removing attributes
+        console.log(button);                                                
+        // <button id="buy-button" class="btn" title="Buy Now">Buy Now</button>
+
+        // Div element after removing attributes
+        console.log(div);                                                  
+        // <div id="product-container" data-id="101" data-price="1500"> Laptop </div>
+    </script>
+</body>
+</html>
