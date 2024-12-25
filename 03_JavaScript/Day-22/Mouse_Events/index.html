@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #222;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            width: 400px;
+            height: 300px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #1098ad;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        #clickOutput {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Mouse Events</h1>
+        <button id="btn">Click Me</button>
+    </div>
+    <p id="clickOutput"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
