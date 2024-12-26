@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Object</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #b7b7b7;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            padding: 30px 50px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        #btn {
+            padding: 12px 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #1089ad;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            border: 2px solid #000
+        }
+
+        #output {
+            font-size: 1rem;
+            font-weight: 600;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Object</h1>
+        <button id="btn">Click Me</button>
+        <input type="text" id="input-box" placeholder="Type something" />
+        <p id="output"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
