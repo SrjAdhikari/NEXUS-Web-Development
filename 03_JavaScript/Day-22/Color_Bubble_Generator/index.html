@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Bubble Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+            overflow: hidden;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #000;
+        }
+
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 1rem;
+            text-align: center;
+            opacity: 1;
+            overflow: hidden; 
+            animation: grow 4s forwards;
+        }
+
+        @keyframes grow {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+                font-size: 10px; 
+            }
+            100% {
+                transform: scale(3);
+                opacity: 0;
+                font-size: 25px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <script src="app.js"></script>
+</body>
+</html>
