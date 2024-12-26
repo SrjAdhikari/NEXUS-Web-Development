@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            color: #fff;
+            background-color: #222;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            color: #000;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px 50px;
+            box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-decoration: underline;
+        }
+
+        input {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 2px solid #000;
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 600;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Keyboard Events</h1>
+    <div class="container">
+        <h2>Keydown Event</h2>
+        <input type="text" id="KeydownBox" placeholder="Type something" />
+        <p id="KeydownOutput"></p>
+    </div>
+
+    <div class="container">
+        <h2>Keyup Event</h2>
+        <input type="text" id="KeyupBox" placeholder="Type something" />
+        <p id="KeyupOutput"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
