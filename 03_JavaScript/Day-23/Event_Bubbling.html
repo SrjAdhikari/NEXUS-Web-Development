@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            color: #fff;
+            background-color: #111;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        #grand-parent, #parent, #child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #grand-parent {
+            height: 400px;
+            width: 400px;
+            border: 5px solid tomato;
+        }
+
+        #parent {
+            height: 300px;
+            width: 300px;
+            border: 5px solid green;
+        }
+
+        #child {
+            height: 200px;
+            width: 200px;
+            font-size: 2rem;
+            border: 5px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Bubbling</h1>
+    <div id="grand-parent">
+        <div id="parent">
+            <div id="child">
+                Child
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script Section -->
+    <script>
+        // Access the "grand-parent", "parent" and "child" element
+        const grandParent = document.querySelector('#grand-parent');
+        const parent = document.querySelector('#parent');
+        const child = document.querySelector('#child');
+
+        // Add event listener on "grand-parent" element
+        grandParent.addEventListener("click", () => {
+            console.log("Grand Parent Clicked");
+        });
+
+        // Add event listener on "parent" element
+        parent.addEventListener("click", () => {
+            console.log("Parent Clicked");
+        });
+
+        // Add event listener on "child" element
+        child.addEventListener("click", () => {
+            console.log("Child Clicked");
+        });
+
+
+        //*****************************************************
+
+        //* What Happens When We Click On Child Element ?
+        // 1. When we click on the child element, the event first triggered on the child element.
+        // 2. Then, the event bubbles up to the "parent" element.
+        // 3. Finally, the event bubbles up to the "grand-parent" element.
+
+
+        //* Output :
+        // First, it prints "Child Clicked".
+        // Then, it prints "Parent Clicked".
+        // Finally, it prints "Grand Parent Clicked".
+
+
+        //* What Happens When We Click On Parent Element ?
+        // 1. When we click on the parent element, the event first triggered on the parent element.
+        // 2. Then, the event bubbles up to the "grand-parent" element.
+        // 3. The event does not bubble up to the "child" element, because the "child" element is not a parent of the "parent" element.
+
+
+        //* Output :
+        // First, it prints "Parent Clicked".
+        // Then, it prints "Grand Parent Clicked".
+    </script>
+</body>
+</html>
