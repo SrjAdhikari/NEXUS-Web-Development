@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Events</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form>
+            <label for="first">First Name</label>
+            <input type="text" id="firstName" name="FirstName" placeholder="Enter your first name" autocomplete="off" required>
+
+            <label for="second">Last Name</label>
+            <input type="text" id="lastName" name="LastName" placeholder="Enter your last name" autocomplete="off" required>
+
+            <label for="third">Age</label>
+            <input type="number" id="age" name="Age" placeholder="Enter your age" autocomplete="off" required>
+
+            <button type="submit">Submit</button>
+            <button type="reset" id ="reset">Reset</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
