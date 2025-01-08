@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    color: white;
+    background-color: #222;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container {
+    width: 70%;                     /* Set the container width */
+    max-width: 400px;               /* Maximum width */
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.weather-container h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.weather-container input {
+    width: 70%;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.weather-container input::placeholder {
+    opacity: 0.6;
+}
+
+.weather-container button {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    background: #1089ad;
+    padding: 12px 25px;
+    border: none;
+    letter-spacing: 0.5px;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.weather-container button:hover {
+    background: #0b7285;
+}
+
+.weather-info {
+    font-size: 17px;
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+.weather-container hr {
+    width: 65%;
+    margin: 0 auto;
+    opacity: 0.3;
+    
+}
+
+.weather-info h2 {
+    font-size: 28px;
+    margin: 10px;
+}
+
+.weather-info p {
+    margin: 7px 0;
+}
+
+/* Responsive Design For Mobile */
+@media (max-width: 480px) {
+    .weather-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .weather-container input {
+        width: 100%;
+    }
+}
