@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zomato Clone</title>
+</head>
+<body>
+    <div class="filter-card">
+        <button class="filter">Filter</button>
+        <button class="offers">Offers</button>
+        <button class="rate">Rating 4.5+</button>
+        <button class="pet-friendly">Pet Friendly</button>
+        <button class="outdoor">Outdoor Seating</button>
+        <button class="alcohol">Serves Alcohol</button>
+        <button class="open">Open Now</button>
+    </div>
+
+    <!--* Filter options popup -->
+    <div id="filterPopup" class="hidden">
+        <h3>Choose Filter</h3>
+        <div class="filterOption">
+            <input type="radio" id="sortByRating" name="filterOption" value="rating">
+            <label for="sortByRating">Sort by Rating</label>
+        </div>
+        <div class="filterOption">
+            <input type="radio" id="sortHighToLow" name="filterOption" value="highLow">
+            <label for="sortHighToLow">High to Low (Price)</label>
+        </div>
+        <div class="filterOption">
+            <input type="radio" id="costOption" name="filterOption" value="costLowHigh">
+            <label for="costOption">Cost: Low to High</label>
+        </div>
+        <div class="filterOption">
+            <input type="radio" id="distanceOption" name="filterOption" value="distance">
+            <label for="distanceOption">Distance</label>
+        </div>
+        <button id="applyFilter">Apply</button>
+        <button id="closeFilter">Close</button>
+    </div>
+
+    <!--* Restaurant Card Container -->
+    <div class="restaurant-container" id="root"></div>
+
+    <script src="./JS/app.js"></script>
+</body>
+</html>
