@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: cursive;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 10px 0;
+	border-radius: 30px;
+	background-color: #fff;
+}
+
+button {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 10px 25px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
