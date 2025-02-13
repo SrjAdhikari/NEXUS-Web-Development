@@ -39,13 +39,13 @@ function App() {
 
 		// Update the password state with the newly generated password
         setPassword(pass);
-    }, [length, number, character, setPassword]);               // Dependencies: Regenerate password when these values change
+    }, [length, number, character]);               				// Dependencies: Regenerate password when these values change
 
 
 	// useEffect Hook to generate a password when the component mounts or dependencies change
     useEffect(() => {
         passwordGenerator();                                    // Call the passwordGenerator function
-      }, [length, number, character, passwordGenerator]);       // Dependencies: Regenerate password when these values change
+      }, [length, number, character]);       					// Dependencies: Regenerate password when these values change
 
 
 	// Function to copy the generated password to the clipboard
