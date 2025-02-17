@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a2e, #252547);
+}
+
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+    width: 350px;
+    height: 250px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    font-variant-numeric: tabular-nums;     /* Ensures uniform spacing for numbers */
+    min-width: 150px;                       /* Prevents content width from shrinking */
+}
+
+/* Button container */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Common button styling */
+button {
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    min-width: 80px;
+}
+
+/* Start button */
+.start-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.start-btn:hover {
+    background-color: #45a049;
+}
+
+/* Stop button */
+.stop-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.stop-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Reset button */
+.reset-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #e68900;
+}
