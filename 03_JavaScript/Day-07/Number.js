@@ -8,10 +8,15 @@ let num2 = new Number(231);
 let num3 = new Number(231);
 
 console.log(num1 == num2);                      // Output -> true
-// Here, num1 == num2 gives "true", because num2 is a object so its value is convert into number and then comparision happen. Since num1 & num2 have the same value, they are equal.
+
+// Here, num1 == num2 gives "true", because num2 is a object so its value is convert into number and then comparision happen. 
+// Since num1 & num2 have the same value, they are equal.
+
 
 console.log(num2 == num3);                      // Output -> false
-// Here, num2 == num3 gives "false", because both are objects, and the == operator checks if they reference the same object (address) in memory. Since num2 and num3 are two separate instances, they are not equal.
+
+// Here, num2 == num3 gives "false", because both are objects, and the == operator checks if they reference the same object (address) in memory. 
+// Since num2 and num3 are two separate instances, they are not equal.
 
 
 //* ****************************************************
@@ -36,10 +41,10 @@ console.log((2.345).toFixed(2));    // "2.35" (rounds to 2 decimal places)
 
 //* Examples:
 let pi = 3.14159;
-console.log(num.toPrecision(2));        // Output: "3.1"
+console.log(pi.toPrecision(2));         // Output: "3.1"
 console.log(pi.toPrecision(3));         // Output: "3.14"
-console.log(num.toPrecision(4));        // Output: "3.142"
-console.log(num.toPrecision(6));        // Output: "3.14159"
+console.log(pi.toPrecision(4));         // Output: "3.142"
+console.log(pi.toPrecision(6));         // Output: "3.14159"
 
 console.log((2.7).toPrecision(1));      // "3"
 console.log((2.7).toPrecision(3));      // "2.70"
