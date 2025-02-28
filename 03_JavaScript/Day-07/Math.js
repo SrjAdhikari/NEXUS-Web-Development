@@ -56,13 +56,62 @@ console.log(Math.random());                     // Output -> Random number betwe
 console.log(Math.random() * 5) + 1;             // Output -> Random number between 1 and 5
 
 
-//* Generalize math.random() to calculate a random number between min and max
-// Formula = Math.floor(Math.random() * (max - min) + 1) + min;
+//* Generalize math.random() to calculate a random number:
+    // 1. Within a range [min, max] exclusive (not including) max.
+        // Math.floor(Math.random() * (max - min)) + min
+        // Gives integers from min to max - 1.
 
-const min = 10;
-const max = 20;
-console.log(Math.floor(Math.random() * (max - min) + 1) + min);
-// Output -> Random number between 10 and 20
+    
+    // 2. Range inclusive of both min and max
+        // Math.floor(Math.random() * (max - min + 1)) + min
+        // Gives integers from min to max
+
+
+    //* Example:
+    const min = 10;
+    const max = 20;
+    console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+
+    // Output -> Random number between 10 and 20
+
+
+    //* Explanation of the formula:
+        // 1. Math.random():
+            // Math.random() generates a random floating-point number between 0 (inclusive) and 1 (exclusive). For example: 0.123, 0.567, 0.999.
+
+        // 2. (max - min + 1):
+            // This calculates the size of the range of values you want to generate, including both min and max. For example:
+                // If min = 5 and max = 10, then (max - min + 1) = 6.
+                // This means there are 6 possible integers in the range [5, 10]: 5, 6, 7, 8, 9, 10
+
+        // 3. Math.random() * (max - min + 1):
+            // This scales the random number from [0, 1) to [0, (max - min + 1)). For example:
+                // If Math.random() returns 0.123, then 0.123 * 6 = 0.738.
+                // If Math.random() returns 0.567, then 0.567 * 6 = 3.402.
+                // f Math.random() returns 0.999, then 0.999 * 6 = 5.994.
+
+        // 4. Math.floor(...):
+            // Math.floor() rounds down the result to the nearest integer. For example:
+                // Math.floor(0.738) results in 0.
+                // Math.floor(3.402) results in 3.
+                // Math.floor(5.994) results in 5.
+
+        // 5. Math.floor(...) + min:
+            // This shifts the range from [0, (max - min)] to [min, max]. For example:
+                // If min = 5, then 0 + 5 = 5
+                // If min = 5, then 3 + 5 = 8.
+                // If min = 5, then 5 + 5 = 10.
+
+
+    //* Why (max - min + 1) is Used?
+        // The + 1 ensures that the range includes the upper bound (max). 
+        // Without it, the formula would only generate numbers up to "max - 1". For example:
+            // If min = 5 and max = 10, then (max - min) = 5.
+            // Without + 1, the formula would generate numbers in the range [0, 5), which would shift to [5, 10) after adding min. 
+            // This would exclude 10.
+
+        // By adding + 1, the range becomes [0, 6), which shifts to [5, 11) after adding min. 
+        // Then, Math.floor() ensures the result is in [5, 10].
 
 
 //* ****************************************************
