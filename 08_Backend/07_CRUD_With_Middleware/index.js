@@ -45,6 +45,11 @@ app.get("/food", (req, res) => {
 });
 
 
+//* ****************************************************
+//* 📌 Admin Actions
+//* ****************************************************
+
+
 // Apply authentication middleware to all routes under "/admin"
 // Only authenticated users can access these endpoints
 app.use("/admin", authentication);
@@ -108,6 +113,62 @@ app.patch("/admin", (req, res) => {
         res.status(404).send("Food item doesn't exist");
     }
 });
+
+
+//* ****************************************************
+//* 📌 User Actions
+//* ****************************************************
+
+
+// Route for users to add food items to their cart
+app.post("/user/:id", (req, res) => {
+    // Convert the ID from string to integer
+    const id = parseInt(req.params.id);
+
+    // Search for the food item in FoodMenu array using the provided id
+    const foodItem = FoodMenu.find(item => item.id === id);
+
+    // If the food item exists in the menu, add the found food item to the addToCart array
+    if(foodItem) {
+        addToCart.push(foodItem);
+        res.status(200).send("Item added successfully!");
+    }
+    else {
+        // Send response indicating item is not available
+        res.send("Item out of stock!");
+    }
+});
+
+
+// Route for users to remove items from their cart
+app.delete("/user/:id", (req, res) => {
+    // Convert the ID from string to integer
+    const id = parseInt(req.params.id);
+
+    // Find the index of the food item with the given ID
+    const index = addToCart.findIndex(item => item.id === id);
+
+    // If the item exists (index is not -1), remove it from the array
+    if(index !== -1) {
+        addToCart.splice(index, 1);
+        res.send("Item removed successfully!");
+    }
+    else {
+        // If item not found, send error with HTTP status 404 (Not Found)
+        res.status(404).send("Item does not present in cart!");
+    }
+});
+
+
+// Route for users to view their cart contents
+app.get("/user", (req, res) => {
+    // If there are any items in the cart, send the entire addToCart array.
+    if(addToCart.length > 0)
+        res.send(addToCart);
+    else
+        // Send message indicating empty cart
+        res.send("Cart is empty!");
+})
 
 
 // Start the server on port 3000
