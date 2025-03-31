@@ -1,0 +1,14 @@
+{
+    "name": "10_mongodb",
+    "version": "1.0.0",
+    "description": "Learning MongoDB",
+    "main": "database.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Suraj",
+    "license": "ISC",
+    "dependencies": {
+        "mongodb": "^6.15.0"
+    }
+}
