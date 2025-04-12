@@ -1,0 +1,20 @@
+{
+    "name": "14_jwt_token",
+    "version": "1.0.0",
+    "description": "Learning JWT Token and Cookies",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Suraj",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.1.1",
+        "cookie-parser": "^1.4.7",
+        "express": "^5.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.13.2",
+        "validator": "^13.15.0"
+    }
+}
