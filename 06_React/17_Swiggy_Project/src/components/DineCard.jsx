@@ -1,7 +1,7 @@
 const DineCard = ({ data }) => {
 	return (
 		<div className="max-w-xs flex-none rounded-t-xl overflow-x-auto shadow hover:shadow-lg transition duration-300">
-			// Link to the restaurant page
+			{/* Link to the restaurant page */}
 			<a href={data?.cta?.link} target="_blank" rel="noopener noreferrer">
 				<div className="relative">
 					<img
